@@ -153,7 +153,7 @@ body{
 }
 .cardsec h2{
     text-align: center;
-    color: white;
+    color: #0f101a;
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
 }
@@ -172,7 +172,7 @@ body{
 }
 .faqsec h2{
     text-align: center;
-    color: white;
+    color: #0f101a;
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
 }
@@ -180,6 +180,9 @@ body{
     background-color: transparent !important;
     border: none !important;
     color: white !important;
+}
+.accordion-body{
+    color: black;
 }
 .accordion-button {
     background-color: #2a2a2a !important;
@@ -274,6 +277,7 @@ body{
 }
 .servicesec h2{
     margin: 30px 0px 20px 0px;
+    color: #0f101a;
 }
 .sersec{
     flex-wrap: nowrap !important;
@@ -284,6 +288,7 @@ body{
 }
 .dodont h2{
     margin: 30px 0px 20px 0px;
+    color: #0f101a;
 }
 .dodont1{
     gap: 30px;
