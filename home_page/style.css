@@ -1,0 +1,356 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(#ffe8e8, #ffb5c8);
+}
+.navformobile{
+    display: none !important;
+}
+.navbar-brand img{
+    width: 40% ;
+    height: auto;
+}
+.nav-item a{
+    color: #0f101a;
+    font-weight: 600;
+}
+.nav-item a:hover{
+    color: #ed2e37;
+    font-weight: 600;
+}
+.herocard{
+    background-color: #ed2e37 !important;
+    color: white !important;
+}
+.herotext{
+    font-size: 4vw;
+    font-weight: 700;
+}
+.card-body p{
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.herobtn a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: white;
+    font-weight: 700;
+    border: 2px solid white;
+    padding: 15px 45px;
+    border-radius: 30px;
+}
+.herobtn a:hover{
+    color: #ed2e37;
+    background-color: white;
+}
+#herobtn2{
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: #ed2e37;
+    background-color: white;
+    font-weight: 700;
+    border: 2px solid white;
+    padding: 15px 45px;
+    border-radius: 30px;
+}
+#herobtn2:hover{
+    color: white;
+    background-color:#ed2e37;
+}
+.heroimg img{
+    top:-23%
+}
+.marque{
+    height: 3.1vw;
+    width: 100%;
+    background-color: #ed2e37;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.scrolling h1{
+    margin-top: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 700;
+    font-family: "Jost", sans-serif;
+    animation-name: marq;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-right: 16px;
+    letter-spacing: 2px;
+}
+.scrolling span{
+    color: rgb(138, 2, 2);
+}
+@keyframes marq {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX( calc( -100% - 20px) );
+    }
+}
+.servicesec h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0.5px 10px #8f8f8f;
+    margin-bottom: 30px;
+}
+.nav-tabs{
+    border-radius: 18px 18px 0px 0px;
+}
+.nav-tabs button:hover{
+    color: white !important;
+} 
+.tab-content{
+    background-color: #ed2e37;
+    padding: 40px;
+    border-radius: 0px 0px 18px 18px;
+}
+.nav-tabs button{
+    color: #ed2e37;
+    font-weight: 600;
+    font-size: 1vw;
+}
+.nav-link.active{
+    background-color:#ed2e37 !important ;
+    color: white !important;
+    font-weight: 700;
+}
+.tab-pane{
+    color: white;
+}
+.dodont h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0.5px 10px #8f8f8f;
+    margin-bottom: 30px;
+}
+.doncard{
+    background-color: #2a2a2a !important;
+    color: white !important;
+}
+.doncard1 h5{
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.8vw;
+}
+.doncard1 li{
+    font-size: 1.3vw;
+}
+.docard1 h5{
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.8vw;
+}
+.docard1 li{
+    font-size: 1.3vw;
+}
+.cardsec h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0.5px 10px #8f8f8f;
+    margin-bottom: 30px;
+}
+.contbody h5{
+    font-weight: 600;
+    color: #ed2e37;
+    font-size: 1.3vw;
+    text-align: center;
+}
+.contbody p{
+    font-size: 1.1vw;
+    font-weight: 450;
+}
+.contbody1{
+    height: 100% !important;
+}
+.faqsec h2{
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0.5px 10px #8f8f8f;
+    margin-bottom: 30px;
+}
+.accordion-item{
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+}
+.accordion-button {
+    background-color: #2a2a2a !important;
+    color: white !important;
+    font-weight: 700;
+}
+.accordion-button[aria-expanded="true"] {
+    background-color: #ed2e37 !important;
+    color: white !important;
+}
+.accordion-button::after {
+    background-color: rgba(255, 255, 255, 0.516) !important;;
+    border-radius: 50%;
+    padding: 2px !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.footersec{
+    width: 100% !important;
+    height: 49vh;
+    background-color: #b40036;
+    color: white !important;
+}
+.footer img{
+    height: auto;
+    width: 16%;
+    margin-bottom: 20px;
+}
+.footer p{
+    color: white;
+    font-weight: 500;
+}
+.textf h4{
+    font-size: 1.2vw;
+}
+.ico i{
+    font-size: 3vw;
+    margin-right: 15px;
+}
+.footersec2{
+    width: 100% !important;
+    height: 7vh;
+    background-color: #2a2a2a;
+}
+.footersec2 p{
+    color: white;
+    font-weight: 600;
+    font-size: 0.9vw;
+}
+@media (min-width: 320px) and (max-width: 640px) {
+
+.navformobile{
+    display: inherit !important;
+    background-color: #ffffff00 !important;
+}
+.navforlaptop{
+    display: none !important;
+}
+.imglogo img{
+    width: 28vw;
+}
+.navbar-brand img {
+    width: 55%;
+    height: auto;
+}
+.mainnav{
+    flex-wrap: nowrap !important;
+}
+.herotext {
+    font-size: 8vw;
+}
+.heroimg img{
+    display: none;
+}
+.card-body p{
+    font-size: 3.3vw;
+}
+.herobtn a{
+    font-size: 2.9vw;
+    padding: 8px 15px;
+}
+#herobtn2 {
+    font-size: 2.9vw;
+    padding: 8px 15px;
+}
+.marque{
+    height: 10vw;
+}
+.scrolling h1{
+    font-size: 5vw;
+}
+.servicesec h2{
+    margin: 30px 0px 20px 0px;
+}
+.sersec{
+    flex-wrap: nowrap !important;
+}
+.nav-tabs button {
+    font-weight: 700;
+    font-size: 2vw;
+}
+.dodont h2{
+    margin: 30px 0px 20px 0px;
+}
+.dodont1{
+    gap: 30px;
+}
+.docard1 h5{
+    font-size: 5vw;
+}
+.docard1 li{
+    font-size: 3vw;
+}
+.doncard1 h5{
+    font-size: 5vw;
+}
+.doncard1 li{
+    font-size: 3vw;
+}
+.contbody h5{
+    font-size: 4.5vw;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.faqsec h2{
+    margin: 30px 0px 20px 0px;
+}
+.footersec {
+    height: 93vh;
+}
+.footer img{
+    width: 55%;
+}
+.ico i {
+    font-size: 8vw;
+}
+.textf h4 {
+    font-size: 4.5vw;
+}
+.footersec2 p {
+    font-size: 3.1vw;
+}
+}
+@media (min-width: 475px) and (max-width: 640px) {
+    .footersec {
+        height: 65vh;
+    }
+    .textf h4{
+        font-size: 3.2vw;
+    }
+    .ico i{
+        font-size: 5vw;
+        margin-right: 15px;
+    }
+}
+@media (min-width: 475px) and (max-width: 767px) {
+    .heroimg img{
+        display: none;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .navformobile{
+        display: inherit !important;
+    }
+    .navforlaptop{
+        display: none !important;
+    }
+    .imglogo img{
+        width: 20vw;
+    }
+
+}
