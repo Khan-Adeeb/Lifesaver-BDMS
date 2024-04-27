@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 body{
     background-image: linear-gradient(#ffe8e8, #ffb5c8);
@@ -103,6 +104,7 @@ body{
 }
 .nav-tabs{
     border-radius: 18px 18px 0px 0px;
+    background-color: #2a2a2a !important;
 }
 .nav-tabs button:hover{
     color: white !important;
@@ -113,7 +115,7 @@ body{
     border-radius: 0px 0px 18px 18px;
 }
 .nav-tabs button{
-    color: #ed2e37;
+    color: #ffb5c8  ;
     font-weight: 600;
     font-size: 1vw;
 }
