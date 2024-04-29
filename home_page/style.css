@@ -98,7 +98,7 @@ body{
 }
 .servicesec h2{
     text-align: center;
-    color: white;
+    color: #2a2a2a;
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
 }
@@ -115,7 +115,7 @@ body{
     border-radius: 0px 0px 18px 18px;
 }
 .nav-tabs button{
-    color: #ffb5c8  ;
+    color: #fff  ;
     font-weight: 600;
     font-size: 1vw;
 }
@@ -148,7 +148,7 @@ body{
 }
 .dodont h2{
     text-align: center;
-    color: white;
+    color: #2a2a2a;
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
 }
