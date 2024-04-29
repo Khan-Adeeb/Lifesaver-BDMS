@@ -96,9 +96,9 @@ body{
         transform: translateX( calc( -100% - 20px) );
     }
 }
-.servicesec h2{
+.servicesec h2 {
     text-align: center;
-    color: white;
+    color: #0f101a;
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
 }
@@ -127,6 +127,9 @@ body{
 .tab-pane{
     color: white;
 }
+.heads{
+    margin-top: 0.6vw;
+}
 #submit{
     text-transform: uppercase;
     font-size: 1.2vw;
@@ -146,9 +149,9 @@ body{
     background-color: #ed2e37;
     color: white;
 }
-.dodont h2{
+.dodont h2 {
     text-align: center;
-    color: white;
+    color: #0f101a;
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
 }
