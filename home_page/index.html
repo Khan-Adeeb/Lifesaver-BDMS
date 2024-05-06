@@ -169,389 +169,406 @@
           </div>
         </nav>
         <div class="tab-content shadow-lg" id="nav-tabContent">
+          <!-- form - 1 -->
           <div class="tab-pane fade show active" id="nav-check" role="tabpanel" aria-labelledby="nav-check-tab"
             tabindex="0">
-            <div class="select">
-              <h6>Select State</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">Andaman & Nicobar Islands</option>
-                <option value="2">Andhra Pradesh</option>
-                <option value="3">Arunachal Pradesh</option>
-                <option value="4">Assam</option>
-                <option value="5">Bihar</option>
-                <option value="6">Chandigarh</option>
-                <option value="7">Chhattisgarh</option>
-                <option value="8">Dadra and Nagar Haveli</option>
-                <option value="9">Daman and Diu</option>
-                <option value="10">Delhi</option>
-                <option value="11">Goa</option>
-                <option value="12">Gujarat</option>
-                <option value="13">Haryana</option>
-                <option value="14">Himachal Pradesh</option>
-                <option value="15">Jammu and Kashmir</option>
-                <option value="16">Jharkhand</option>
-                <option value="17">Karnataka</option>
-                <option value="18">Kerala</option>
-                <option value="19">Ladakh</option>
-                <option value="20">Lakshadweep</option>
-                <option value="21">Madhya Pradesh</option>
-                <option value="22">Maharashtra</option>
-                <option value="23">Manipur</option>
-                <option value="24">Meghalaya</option>
-                <option value="25">Mizoram</option>
-                <option value="26">Nagaland</option>
-                <option value="27">Odisha</option>
-                <option value="28">Puducherry</option>
-                <option value="29">Punjab</option>
-                <option value="30">Rajasthan</option>
-                <option value="31">Sikkim</option>
-                <option value="32">Tamil Nadu</option>
-                <option value="33">Telangana</option>
-                <option value="34">Tripura</option>
-                <option value="35">Uttarakhand</option>
-                <option value="36">Uttar Pradesh</option>
-                <option value="37">West Bengal</option>
-              </select>
-            </div>
-            <div class="select">
-              <h6 class="heads">Blood Group</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">A+</option>
-                <option value="2">B+</option>
-                <option value="3">AB+</option>
-                <option value="4">A-</option>
-                <option value="5">B-</option>
-                <option value="6">AB-</option>
-                <option value="7">O+</option>
-                <option value="8">O-</option>
-
-              </select>
-            </div>
-            <div class="col-md-2 select">
-              <h6 class="heads">ZIP</h6>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
+            <form id="form1" data-action="submit" class="service-form" method="post">
+              <div class="select">
+                <h6>Select State</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">Andaman & Nicobar Islands</option>
+                  <option value="2">Andhra Pradesh</option>
+                  <option value="3">Arunachal Pradesh</option>
+                  <option value="4">Assam</option>
+                  <option value="5">Bihar</option>
+                  <option value="6">Chandigarh</option>
+                  <option value="7">Chhattisgarh</option>
+                  <option value="8">Dadra and Nagar Haveli</option>
+                  <option value="9">Daman and Diu</option>
+                  <option value="10">Delhi</option>
+                  <option value="11">Goa</option>
+                  <option value="12">Gujarat</option>
+                  <option value="13">Haryana</option>
+                  <option value="14">Himachal Pradesh</option>
+                  <option value="15">Jammu and Kashmir</option>
+                  <option value="16">Jharkhand</option>
+                  <option value="17">Karnataka</option>
+                  <option value="18">Kerala</option>
+                  <option value="19">Ladakh</option>
+                  <option value="20">Lakshadweep</option>
+                  <option value="21">Madhya Pradesh</option>
+                  <option value="22">Maharashtra</option>
+                  <option value="23">Manipur</option>
+                  <option value="24">Meghalaya</option>
+                  <option value="25">Mizoram</option>
+                  <option value="26">Nagaland</option>
+                  <option value="27">Odisha</option>
+                  <option value="28">Puducherry</option>
+                  <option value="29">Punjab</option>
+                  <option value="30">Rajasthan</option>
+                  <option value="31">Sikkim</option>
+                  <option value="32">Tamil Nadu</option>
+                  <option value="33">Telangana</option>
+                  <option value="34">Tripura</option>
+                  <option value="35">Uttarakhand</option>
+                  <option value="36">Uttar Pradesh</option>
+                  <option value="37">West Bengal</option>
+                </select>
+              </div>
+              <div class="select">
+                <h6 class="heads">Blood Group</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">A+</option>
+                  <option value="2">B+</option>
+                  <option value="3">AB+</option>
+                  <option value="4">A-</option>
+                  <option value="5">B-</option>
+                  <option value="6">AB-</option>
+                  <option value="7">O+</option>
+                  <option value="8">O-</option>
+  
+                </select>
+              </div>
+              <div class="col-md-2 select">
+                <h6 class="heads">ZIP</h6>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>
+            </form>
           </div>
+          <!-- form - 2 -->
           <div class="tab-pane fade" id="nav-request" role="tabpanel" aria-labelledby="nav-request-tab" tabindex="0">
-            <div class="row">
-              <div class="col">
-                <h6 id="inputs">First Name</h6>
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            <form id="form2" method="post" class="service-form">
+              <div class="row">
+                <div class="col">
+                  <h6 id="inputs">First Name</h6>
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <h6 id="inputs">Last Name</h6>
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
               </div>
-              <div class="col">
-                <h6 id="inputs">Last Name</h6>
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              <div class="row">
+                <div class="col">
+                  <h6 id="inputs"class="heads">Age</h6>
+                  <input type="text" class="form-control" placeholder="Age" aria-label="First name">
+                </div>
+                <div class="col">
+                  <h6 id="inputs" class="heads">Date of Birth</h6>
+                  <input type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h6 id="inputs"class="heads">Age</h6>
-                <input type="text" class="form-control" placeholder="Age" aria-label="First name">
+              <div class="row">
+                <div class="col">
+                  <h6 id="inputs" class="heads">Email Address</h6>
+                  <input type="text" class="form-control" placeholder="Email" aria-label="First name">
+                </div>
+                <div class="col">
+                  <h6 id="inputs" class="heads">Phone Number</h6>
+                  <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+                </div>
               </div>
-              <div class="col">
-                <h6 id="inputs" class="heads">Date of Birth</h6>
-                <input type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+              <div class="select">
+                <h6 class="heads">Blood Group</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">A+</option>
+                  <option value="2">B+</option>
+                  <option value="3">AB+</option>
+                  <option value="4">A-</option>
+                  <option value="5">B-</option>
+                  <option value="6">AB-</option>
+                  <option value="7">O+</option>
+                  <option value="8">O-</option>
+                </select>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h6 id="inputs" class="heads">Email Address</h6>
-                <input type="text" class="form-control" placeholder="Email" aria-label="First name">
+              <div class="select">
+                <h6 class="heads">Select State</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">Andaman & Nicobar Islands</option>
+                  <option value="2">Andhra Pradesh</option>
+                  <option value="3">Arunachal Pradesh</option>
+                  <option value="4">Assam</option>
+                  <option value="5">Bihar</option>
+                  <option value="6">Chandigarh</option>
+                  <option value="7">Chhattisgarh</option>
+                  <option value="8">Dadra and Nagar Haveli</option>
+                  <option value="9">Daman and Diu</option>
+                  <option value="10">Delhi</option>
+                  <option value="11">Goa</option>
+                  <option value="12">Gujarat</option>
+                  <option value="13">Haryana</option>
+                  <option value="14">Himachal Pradesh</option>
+                  <option value="15">Jammu and Kashmir</option>
+                  <option value="16">Jharkhand</option>
+                  <option value="17">Karnataka</option>
+                  <option value="18">Kerala</option>
+                  <option value="19">Ladakh</option>
+                  <option value="20">Lakshadweep</option>
+                  <option value="21">Madhya Pradesh</option>
+                  <option value="22">Maharashtra</option>
+                  <option value="23">Manipur</option>
+                  <option value="24">Meghalaya</option>
+                  <option value="25">Mizoram</option>
+                  <option value="26">Nagaland</option>
+                  <option value="27">Odisha</option>
+                  <option value="28">Puducherry</option>
+                  <option value="29">Punjab</option>
+                  <option value="30">Rajasthan</option>
+                  <option value="31">Sikkim</option>
+                  <option value="32">Tamil Nadu</option>
+                  <option value="33">Telangana</option>
+                  <option value="34">Tripura</option>
+                  <option value="35">Uttarakhand</option>
+                  <option value="36">Uttar Pradesh</option>
+                  <option value="37">West Bengal</option>
+                </select>
               </div>
-              <div class="col">
-                <h6 id="inputs" class="heads">Phone Number</h6>
-                <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+              <div class="col-md-2 select">
+                <h6 class="heads">ZIP</h6>
+                <input type="text" class="form-control" id="inputZip">
               </div>
-            </div>
-            <div class="select">
-              <h6 class="heads">Blood Group</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">A+</option>
-                <option value="2">B+</option>
-                <option value="3">AB+</option>
-                <option value="4">A-</option>
-                <option value="5">B-</option>
-                <option value="6">AB-</option>
-                <option value="7">O+</option>
-                <option value="8">O-</option>
-              </select>
-            </div>
-            <div class="select">
-              <h6 class="heads">Select State</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">Andaman & Nicobar Islands</option>
-                <option value="2">Andhra Pradesh</option>
-                <option value="3">Arunachal Pradesh</option>
-                <option value="4">Assam</option>
-                <option value="5">Bihar</option>
-                <option value="6">Chandigarh</option>
-                <option value="7">Chhattisgarh</option>
-                <option value="8">Dadra and Nagar Haveli</option>
-                <option value="9">Daman and Diu</option>
-                <option value="10">Delhi</option>
-                <option value="11">Goa</option>
-                <option value="12">Gujarat</option>
-                <option value="13">Haryana</option>
-                <option value="14">Himachal Pradesh</option>
-                <option value="15">Jammu and Kashmir</option>
-                <option value="16">Jharkhand</option>
-                <option value="17">Karnataka</option>
-                <option value="18">Kerala</option>
-                <option value="19">Ladakh</option>
-                <option value="20">Lakshadweep</option>
-                <option value="21">Madhya Pradesh</option>
-                <option value="22">Maharashtra</option>
-                <option value="23">Manipur</option>
-                <option value="24">Meghalaya</option>
-                <option value="25">Mizoram</option>
-                <option value="26">Nagaland</option>
-                <option value="27">Odisha</option>
-                <option value="28">Puducherry</option>
-                <option value="29">Punjab</option>
-                <option value="30">Rajasthan</option>
-                <option value="31">Sikkim</option>
-                <option value="32">Tamil Nadu</option>
-                <option value="33">Telangana</option>
-                <option value="34">Tripura</option>
-                <option value="35">Uttarakhand</option>
-                <option value="36">Uttar Pradesh</option>
-                <option value="37">West Bengal</option>
-              </select>
-            </div>
-            <div class="col-md-2 select">
-              <h6 class="heads">ZIP</h6>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
+              <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
+            </form>
           </div>
+          
+          <!-- form-3  -->
           <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab" tabindex="0">
-            <div class="row">
-              <div class="col">
-                <h6 id="inputs">First Name</h6>
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            <form id="form3" method="post" class="service-form">
+              <div class="row">
+                <div class="col">
+                  <h6 id="inputs">First Name</h6>
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <h6 id="inputs">Last Name</h6>
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
               </div>
-              <div class="col">
-                <h6 id="inputs">Last Name</h6>
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              <div class="row">
+                <div class="col">
+                  <h6 id="inputs" class="heads">Father Name</h6>
+                  <input type="text" class="form-control" placeholder="Father Name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <h6 id="inputs" class="heads">Phone Number</h6>
+                  <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h6 id="inputs" class="heads">Father Name</h6>
-                <input type="text" class="form-control" placeholder="Father Name" aria-label="First name">
+              <div class="row">
+                <div class="col">
+                  <h6 id="inputs" class="heads">Age</h6>
+                  <input type="text" class="form-control" placeholder="Age" aria-label="First name">
+                </div>
+                <div class="col">
+                  <h6 id="inputs" class="heads">Date of Birth</h6>
+                  <input type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+                </div>
               </div>
-              <div class="col">
-                <h6 id="inputs" class="heads">Phone Number</h6>
-                <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+              <div class="row">
+                <div class="col">
+                  <h6 id="inputs" class="heads">Gender</h6>
+                  <input type="text" class="form-control" placeholder="Gender" aria-label="First name">
+                </div>
+                <div class="col">
+                  <h6 id="inputs" class="heads">Email Address</h6>
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h6 id="inputs" class="heads">Age</h6>
-                <input type="text" class="form-control" placeholder="Age" aria-label="First name">
+              <div class="select" >
+                <h6 class="heads">Blood Group</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">A+</option>
+                  <option value="2">B+</option>
+                  <option value="3">AB+</option>
+                  <option value="4">A-</option>
+                  <option value="5">B-</option>
+                  <option value="6">AB-</option>
+                  <option value="7">O+</option>
+                  <option value="8">O-</option>
+                </select>
+              </div>
+              <div class="select">
+                <h6 class="heads">Select State</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">Andaman & Nicobar Islands</option>
+                  <option value="2">Andhra Pradesh</option>
+                  <option value="3">Arunachal Pradesh</option>
+                  <option value="4">Assam</option>
+                  <option value="5">Bihar</option>
+                  <option value="6">Chandigarh</option>
+                  <option value="7">Chhattisgarh</option>
+                  <option value="8">Dadra and Nagar Haveli</option>
+                  <option value="9">Daman and Diu</option>
+                  <option value="10">Delhi</option>
+                  <option value="11">Goa</option>
+                  <option value="12">Gujarat</option>
+                  <option value="13">Haryana</option>
+                  <option value="14">Himachal Pradesh</option>
+                  <option value="15">Jammu and Kashmir</option>
+                  <option value="16">Jharkhand</option>
+                  <option value="17">Karnataka</option>
+                  <option value="18">Kerala</option>
+                  <option value="19">Ladakh</option>
+                  <option value="20">Lakshadweep</option>
+                  <option value="21">Madhya Pradesh</option>
+                  <option value="22">Maharashtra</option>
+                  <option value="23">Manipur</option>
+                  <option value="24">Meghalaya</option>
+                  <option value="25">Mizoram</option>
+                  <option value="26">Nagaland</option>
+                  <option value="27">Odisha</option>
+                  <option value="28">Puducherry</option>
+                  <option value="29">Punjab</option>
+                  <option value="30">Rajasthan</option>
+                  <option value="31">Sikkim</option>
+                  <option value="32">Tamil Nadu</option>
+                  <option value="33">Telangana</option>
+                  <option value="34">Tripura</option>
+                  <option value="35">Uttarakhand</option>
+                  <option value="36">Uttar Pradesh</option>
+                  <option value="37">West Bengal</option>
+                </select>
+              </div>
+              <div class="col-md-2 select">
+                <h6 class="heads">ZIP</h6>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
+            </form>
+          </div>
+
+          <!-- form-4  -->
+          <div class="tab-pane fade" id="nav-drive" role="tabpanel" aria-labelledby="nav-drive-tab" tabindex="0">
+            <form id="form4" method="post" class="service-form">
+              <div class="select">
+                <h6>Select State</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">Andaman & Nicobar Islands</option>
+                  <option value="2">Andhra Pradesh</option>
+                  <option value="3">Arunachal Pradesh</option>
+                  <option value="4">Assam</option>
+                  <option value="5">Bihar</option>
+                  <option value="6">Chandigarh</option>
+                  <option value="7">Chhattisgarh</option>
+                  <option value="8">Dadra and Nagar Haveli</option>
+                  <option value="9">Daman and Diu</option>
+                  <option value="10">Delhi</option>
+                  <option value="11">Goa</option>
+                  <option value="12">Gujarat</option>
+                  <option value="13">Haryana</option>
+                  <option value="14">Himachal Pradesh</option>
+                  <option value="15">Jammu and Kashmir</option>
+                  <option value="16">Jharkhand</option>
+                  <option value="17">Karnataka</option>
+                  <option value="18">Kerala</option>
+                  <option value="19">Ladakh</option>
+                  <option value="20">Lakshadweep</option>
+                  <option value="21">Madhya Pradesh</option>
+                  <option value="22">Maharashtra</option>
+                  <option value="23">Manipur</option>
+                  <option value="24">Meghalaya</option>
+                  <option value="25">Mizoram</option>
+                  <option value="26">Nagaland</option>
+                  <option value="27">Odisha</option>
+                  <option value="28">Puducherry</option>
+                  <option value="29">Punjab</option>
+                  <option value="30">Rajasthan</option>
+                  <option value="31">Sikkim</option>
+                  <option value="32">Tamil Nadu</option>
+                  <option value="33">Telangana</option>
+                  <option value="34">Tripura</option>
+                  <option value="35">Uttarakhand</option>
+                  <option value="36">Uttar Pradesh</option>
+                  <option value="37">West Bengal</option>
+                </select>
               </div>
               <div class="col">
                 <h6 id="inputs" class="heads">Date of Birth</h6>
                 <input type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h6 id="inputs" class="heads">Gender</h6>
-                <input type="text" class="form-control" placeholder="Gender" aria-label="First name">
+              <div class="col-md-2 select">
+                <h6 class="heads" class="heads">ZIP</h6>
+                <input type="text" class="form-control" id="inputZip">
               </div>
-              <div class="col">
-                <h6 id="inputs" class="heads">Email Address</h6>
-                <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
-              </div>
-            </div>
-            <div class="select" >
-              <h6 class="heads">Blood Group</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">A+</option>
-                <option value="2">B+</option>
-                <option value="3">AB+</option>
-                <option value="4">A-</option>
-                <option value="5">B-</option>
-                <option value="6">AB-</option>
-                <option value="7">O+</option>
-                <option value="8">O-</option>
-              </select>
-            </div>
-            <div class="select">
-              <h6 class="heads">Select State</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">Andaman & Nicobar Islands</option>
-                <option value="2">Andhra Pradesh</option>
-                <option value="3">Arunachal Pradesh</option>
-                <option value="4">Assam</option>
-                <option value="5">Bihar</option>
-                <option value="6">Chandigarh</option>
-                <option value="7">Chhattisgarh</option>
-                <option value="8">Dadra and Nagar Haveli</option>
-                <option value="9">Daman and Diu</option>
-                <option value="10">Delhi</option>
-                <option value="11">Goa</option>
-                <option value="12">Gujarat</option>
-                <option value="13">Haryana</option>
-                <option value="14">Himachal Pradesh</option>
-                <option value="15">Jammu and Kashmir</option>
-                <option value="16">Jharkhand</option>
-                <option value="17">Karnataka</option>
-                <option value="18">Kerala</option>
-                <option value="19">Ladakh</option>
-                <option value="20">Lakshadweep</option>
-                <option value="21">Madhya Pradesh</option>
-                <option value="22">Maharashtra</option>
-                <option value="23">Manipur</option>
-                <option value="24">Meghalaya</option>
-                <option value="25">Mizoram</option>
-                <option value="26">Nagaland</option>
-                <option value="27">Odisha</option>
-                <option value="28">Puducherry</option>
-                <option value="29">Punjab</option>
-                <option value="30">Rajasthan</option>
-                <option value="31">Sikkim</option>
-                <option value="32">Tamil Nadu</option>
-                <option value="33">Telangana</option>
-                <option value="34">Tripura</option>
-                <option value="35">Uttarakhand</option>
-                <option value="36">Uttar Pradesh</option>
-                <option value="37">West Bengal</option>
-              </select>
-            </div>
-            <div class="col-md-2 select">
-              <h6 class="heads">ZIP</h6>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
+              <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>  
+            </form>
           </div>
-          <div class="tab-pane fade" id="nav-drive" role="tabpanel" aria-labelledby="nav-drive-tab" tabindex="0">
-            <div class="select">
-              <h6>Select State</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">Andaman & Nicobar Islands</option>
-                <option value="2">Andhra Pradesh</option>
-                <option value="3">Arunachal Pradesh</option>
-                <option value="4">Assam</option>
-                <option value="5">Bihar</option>
-                <option value="6">Chandigarh</option>
-                <option value="7">Chhattisgarh</option>
-                <option value="8">Dadra and Nagar Haveli</option>
-                <option value="9">Daman and Diu</option>
-                <option value="10">Delhi</option>
-                <option value="11">Goa</option>
-                <option value="12">Gujarat</option>
-                <option value="13">Haryana</option>
-                <option value="14">Himachal Pradesh</option>
-                <option value="15">Jammu and Kashmir</option>
-                <option value="16">Jharkhand</option>
-                <option value="17">Karnataka</option>
-                <option value="18">Kerala</option>
-                <option value="19">Ladakh</option>
-                <option value="20">Lakshadweep</option>
-                <option value="21">Madhya Pradesh</option>
-                <option value="22">Maharashtra</option>
-                <option value="23">Manipur</option>
-                <option value="24">Meghalaya</option>
-                <option value="25">Mizoram</option>
-                <option value="26">Nagaland</option>
-                <option value="27">Odisha</option>
-                <option value="28">Puducherry</option>
-                <option value="29">Punjab</option>
-                <option value="30">Rajasthan</option>
-                <option value="31">Sikkim</option>
-                <option value="32">Tamil Nadu</option>
-                <option value="33">Telangana</option>
-                <option value="34">Tripura</option>
-                <option value="35">Uttarakhand</option>
-                <option value="36">Uttar Pradesh</option>
-                <option value="37">West Bengal</option>
-              </select>
-            </div>
-            <div class="col">
-              <h6 id="inputs" class="heads">Date of Birth</h6>
-              <input type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
-            </div>
-            <div class="col-md-2 select">
-              <h6 class="heads" class="heads">ZIP</h6>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
-  
-          </div>
+
+          <!-- form-5  -->
           <div class="tab-pane fade" id="nav-donatep" role="tabpanel" aria-labelledby="nav-donatep-tab" tabindex="0">
-            <div class="select">
-              <h6>Select State</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">Andaman & Nicobar Islands</option>
-                <option value="2">Andhra Pradesh</option>
-                <option value="3">Arunachal Pradesh</option>
-                <option value="4">Assam</option>
-                <option value="5">Bihar</option>
-                <option value="6">Chandigarh</option>
-                <option value="7">Chhattisgarh</option>
-                <option value="8">Dadra and Nagar Haveli</option>
-                <option value="9">Daman and Diu</option>
-                <option value="10">Delhi</option>
-                <option value="11">Goa</option>
-                <option value="12">Gujarat</option>
-                <option value="13">Haryana</option>
-                <option value="14">Himachal Pradesh</option>
-                <option value="15">Jammu and Kashmir</option>
-                <option value="16">Jharkhand</option>
-                <option value="17">Karnataka</option>
-                <option value="18">Kerala</option>
-                <option value="19">Ladakh</option>
-                <option value="20">Lakshadweep</option>
-                <option value="21">Madhya Pradesh</option>
-                <option value="22">Maharashtra</option>
-                <option value="23">Manipur</option>
-                <option value="24">Meghalaya</option>
-                <option value="25">Mizoram</option>
-                <option value="26">Nagaland</option>
-                <option value="27">Odisha</option>
-                <option value="28">Puducherry</option>
-                <option value="29">Punjab</option>
-                <option value="30">Rajasthan</option>
-                <option value="31">Sikkim</option>
-                <option value="32">Tamil Nadu</option>
-                <option value="33">Telangana</option>
-                <option value="34">Tripura</option>
-                <option value="35">Uttarakhand</option>
-                <option value="36">Uttar Pradesh</option>
-                <option value="37">West Bengal</option>
-              </select>
-            </div>
-            <div class="select">
-              <h6 class="heads">Blood Group</h6>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>none</option>
-                <option value="1">A+</option>
-                <option value="2">B+</option>
-                <option value="3">AB+</option>
-                <option value="4">A-</option>
-                <option value="5">B-</option>
-                <option value="6">AB-</option>
-                <option value="7">O+</option>
-                <option value="8">O-</option>
-              </select>
-            </div>
-            <div class="col-md-2 select">
-              <h6 class="heads">ZIP</h6>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
-  
+            <form id="form5" method="post" class="service-form">
+              <div class="select">
+                <h6>Select State</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">Andaman & Nicobar Islands</option>
+                  <option value="2">Andhra Pradesh</option>
+                  <option value="3">Arunachal Pradesh</option>
+                  <option value="4">Assam</option>
+                  <option value="5">Bihar</option>
+                  <option value="6">Chandigarh</option>
+                  <option value="7">Chhattisgarh</option>
+                  <option value="8">Dadra and Nagar Haveli</option>
+                  <option value="9">Daman and Diu</option>
+                  <option value="10">Delhi</option>
+                  <option value="11">Goa</option>
+                  <option value="12">Gujarat</option>
+                  <option value="13">Haryana</option>
+                  <option value="14">Himachal Pradesh</option>
+                  <option value="15">Jammu and Kashmir</option>
+                  <option value="16">Jharkhand</option>
+                  <option value="17">Karnataka</option>
+                  <option value="18">Kerala</option>
+                  <option value="19">Ladakh</option>
+                  <option value="20">Lakshadweep</option>
+                  <option value="21">Madhya Pradesh</option>
+                  <option value="22">Maharashtra</option>
+                  <option value="23">Manipur</option>
+                  <option value="24">Meghalaya</option>
+                  <option value="25">Mizoram</option>
+                  <option value="26">Nagaland</option>
+                  <option value="27">Odisha</option>
+                  <option value="28">Puducherry</option>
+                  <option value="29">Punjab</option>
+                  <option value="30">Rajasthan</option>
+                  <option value="31">Sikkim</option>
+                  <option value="32">Tamil Nadu</option>
+                  <option value="33">Telangana</option>
+                  <option value="34">Tripura</option>
+                  <option value="35">Uttarakhand</option>
+                  <option value="36">Uttar Pradesh</option>
+                  <option value="37">West Bengal</option>
+                </select>
+              </div>
+              <div class="select">
+                <h6 class="heads">Blood Group</h6>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>none</option>
+                  <option value="1">A+</option>
+                  <option value="2">B+</option>
+                  <option value="3">AB+</option>
+                  <option value="4">A-</option>
+                  <option value="5">B-</option>
+                  <option value="6">AB-</option>
+                  <option value="7">O+</option>
+                  <option value="8">O-</option>
+                </select>
+              </div>
+              <div class="col-md-2 select">
+                <h6 class="heads">ZIP</h6>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
+    
+            </form>
           </div>
         </div>
       </div>
