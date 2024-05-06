@@ -175,7 +175,7 @@
             <form id="form1" data-action="submit" class="service-form" method="post">
               <div class="select">
                 <h6>Select State</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="state" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">Andaman & Nicobar Islands</option>
                   <option value="2">Andhra Pradesh</option>
@@ -218,7 +218,7 @@
               </div>
               <div class="select">
                 <h6 class="heads">Blood Group</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="bloodgroup" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">A+</option>
                   <option value="2">B+</option>
@@ -244,36 +244,36 @@
               <div class="row">
                 <div class="col">
                   <h6 id="inputs">First Name</h6>
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  <input type="text" id="fname_rb" class="form-control" placeholder="First name" aria-label="First name">
                 </div>
                 <div class="col">
                   <h6 id="inputs">Last Name</h6>
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  <input type="text" id="lname_rb" class="form-control" placeholder="Last name" aria-label="Last name">
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <h6 id="inputs"class="heads">Age</h6>
-                  <input type="text" class="form-control" placeholder="Age" aria-label="First name">
+                  <input type="text" id="age_rb" class="form-control" placeholder="Age" aria-label="First name">
                 </div>
                 <div class="col">
                   <h6 id="inputs" class="heads">Date of Birth</h6>
-                  <input type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+                  <input type="date" id="dob_rb" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <h6 id="inputs" class="heads">Email Address</h6>
-                  <input type="text" class="form-control" placeholder="Email" aria-label="First name">
+                  <input type="text" id="email_rb" class="form-control" placeholder="Email" aria-label="First name">
                 </div>
                 <div class="col">
                   <h6 id="inputs" class="heads">Phone Number</h6>
-                  <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+                  <input type="text" id="phone_rb" class="form-control" placeholder="Phone Number" aria-label="Last name">
                 </div>
               </div>
               <div class="select">
                 <h6 class="heads">Blood Group</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="blood_rb" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">A+</option>
                   <option value="2">B+</option>
@@ -287,7 +287,7 @@
               </div>
               <div class="select">
                 <h6 class="heads">Select State</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="state_rb" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">Andaman & Nicobar Islands</option>
                   <option value="2">Andhra Pradesh</option>
@@ -330,58 +330,57 @@
               </div>
               <div class="col-md-2 select">
                 <h6 class="heads">ZIP</h6>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip2">
               </div>
-              <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
+              <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>
             </form>
-          </div>
-          
+          </div>         
           <!-- form-3  -->
           <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab" tabindex="0">
             <form id="form3" method="post" class="service-form">
               <div class="row">
                 <div class="col">
                   <h6 id="inputs">First Name</h6>
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  <input type="text" id="fname_dr" class="form-control" placeholder="First name" aria-label="First name">
                 </div>
                 <div class="col">
                   <h6 id="inputs">Last Name</h6>
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  <input type="text" id="lname_dr" class="form-control" placeholder="Last name" aria-label="Last name">
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <h6 id="inputs" class="heads">Father Name</h6>
-                  <input type="text" class="form-control" placeholder="Father Name" aria-label="First name">
+                  <input type="text" id="father_dr" class="form-control" placeholder="Father Name" aria-label="First name">
                 </div>
                 <div class="col">
                   <h6 id="inputs" class="heads">Phone Number</h6>
-                  <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+                  <input type="text" id="phone_dr" class="form-control" placeholder="Phone Number" aria-label="Last name">
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <h6 id="inputs" class="heads">Age</h6>
-                  <input type="text" class="form-control" placeholder="Age" aria-label="First name">
+                  <input type="text" id="age_dr" class="form-control" placeholder="Age" aria-label="First name">
                 </div>
                 <div class="col">
                   <h6 id="inputs" class="heads">Date of Birth</h6>
-                  <input type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+                  <input type="date" id="dob_dr" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <h6 id="inputs" class="heads">Gender</h6>
-                  <input type="text" class="form-control" placeholder="Gender" aria-label="First name">
+                  <input type="text" id="gender_dr" class="form-control" placeholder="Gender" aria-label="First name">
                 </div>
                 <div class="col">
                   <h6 id="inputs" class="heads">Email Address</h6>
-                  <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
+                  <input type="text" id="email_dr" class="form-control" placeholder="Email" aria-label="Last name">
                 </div>
               </div>
               <div class="select" >
                 <h6 class="heads">Blood Group</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="blood_dr" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">A+</option>
                   <option value="2">B+</option>
@@ -395,7 +394,7 @@
               </div>
               <div class="select">
                 <h6 class="heads">Select State</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="state_dr" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">Andaman & Nicobar Islands</option>
                   <option value="2">Andhra Pradesh</option>
@@ -438,18 +437,17 @@
               </div>
               <div class="col-md-2 select">
                 <h6 class="heads">ZIP</h6>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip3">
               </div>
-              <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
+              <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>
             </form>
           </div>
-
           <!-- form-4  -->
           <div class="tab-pane fade" id="nav-drive" role="tabpanel" aria-labelledby="nav-drive-tab" tabindex="0">
             <form id="form4" method="post" class="service-form">
               <div class="select">
                 <h6>Select State</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="state_dd" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">Andaman & Nicobar Islands</option>
                   <option value="2">Andhra Pradesh</option>
@@ -492,22 +490,21 @@
               </div>
               <div class="col">
                 <h6 id="inputs" class="heads">Date of Birth</h6>
-                <input type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+                <input type="date" id="dob_dd" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
               </div>
               <div class="col-md-2 select">
                 <h6 class="heads" class="heads">ZIP</h6>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip4">
               </div>
-              <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>  
+              <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>  
             </form>
           </div>
-
           <!-- form-5  -->
           <div class="tab-pane fade" id="nav-donatep" role="tabpanel" aria-labelledby="nav-donatep-tab" tabindex="0">
             <form id="form5" method="post" class="service-form">
               <div class="select">
                 <h6>Select State</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="state_dp" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">Andaman & Nicobar Islands</option>
                   <option value="2">Andhra Pradesh</option>
@@ -550,7 +547,7 @@
               </div>
               <div class="select">
                 <h6 class="heads">Blood Group</h6>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="blood_dp" aria-label="Default select example">
                   <option selected>none</option>
                   <option value="1">A+</option>
                   <option value="2">B+</option>
@@ -564,10 +561,9 @@
               </div>
               <div class="col-md-2 select">
                 <h6 class="heads">ZIP</h6>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip5">
               </div>
-              <button type="button" class="btn btn-outline-secondary" id="submit">Submit</button>
-    
+              <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>
             </form>
           </div>
         </div>
@@ -831,20 +827,20 @@
 
       e.preventDefault();
 
-      const info1 = document.getElementById("selectstate").value;
-      const info2 = document.getElementById("selectbg").value;
-      const info3 = document.getElementById("inputz").value;
+      const info1 = document.getElementById("state").value;
+      const info2 = document.getElementById("bloodgroup").value;
+      const info3 = document.getElementById("inputZip").value;
 
       console.log( info1 , info2 , info3 );
   
       async function fetchdata(){
-      const url='http://localhost:3000/answer'
+      const url='http://localhost:3000/donor'
       const response= await fetch(url,{
       method:'POST',
         body:JSON.stringify({
-        state: info1,
-        blood: info2,
-        zip: info3,
+        state_cd: info1,
+        blood_cd: info2,
+        zip_cd: info3,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8"
@@ -853,6 +849,161 @@
     }
     fetchdata();
 }
+//request blood
+const data2=document.getElementById('form2');
+data2.addEventListener('submit',fetching2);
+
+function fetching2(e) {
+  e.preventDefault();
+  const info1=document.getElementById('fname_rb').value;
+  const info2=document.getElementById('lname_rb').value;
+  const info3=document.getElementById('age_rb').value;
+  const info4=document.getElementById('dob_rb').value;
+  const info5=document.getElementById('email_rb').value;
+  const info6=document.getElementById('phone_rb').value;
+  const info7=document.getElementById('blood_rb').value;
+  const info8=document.getElementById('state_rb').value;
+  const info9=document.getElementById('inputZip2').value;
+  
+  console.log(info1,info2,info3,info7,info8,info9);
+  async function fetchdata(){
+    const url='http://localhost:3000/requestblood'
+    const response= await fetch(url,{
+      method:'POST',
+      body:JSON.stringify({
+      fname:info1,
+      lname:info2,
+      age:info3,
+      dob:info4,
+      email:info5,
+      phone:info6,  
+      blood_rb: info7,
+      state_rb: info8,
+      zip_rb: info9,
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+    });
+    if (response.ok) {
+      alert('Patient has been registered successfully!');
+    } else {
+      alert('Error registering donor. Please try again.');
+    }
+
+  }
+  fetchdata();
+}
+
+//donor register
+const data3=document.getElementById('form3');
+data3.addEventListener('submit',fetching3);
+
+function fetching3(e) {
+  e.preventDefault();
+  const info1=document.getElementById('fname_dr').value;
+  const info2=document.getElementById('lname_dr').value;
+  const info3=document.getElementById('father_dr').value;
+  const info4=document.getElementById('phone_dr').value;
+  const info5=document.getElementById('age_dr').value;
+  const info6=document.getElementById('dob_dr').value;
+  const info7=document.getElementById('gender_dr').value;
+  const info8=document.getElementById('email_dr').value;
+  const info9=document.getElementById('blood_dr').value;
+  const info10=document.getElementById('state_dr').value;
+  const info11=document.getElementById('inputZip3').value;
+  
+  console.log(info1,info2,info3,info7,info8,info9);
+  async function fetchdata(){
+    const url='http://localhost:3000/donorregister'
+    const response= await fetch(url,{
+      method:'POST',
+      body:JSON.stringify({
+      fname_dr:info1,
+      lname_dr:info2,
+      father_dr:info3,
+      phone_dr:info4,
+      age_dr:info5,
+      dob_dr:info6,
+      gender_dr:info7,
+      email_dr:info8,  
+      blood_dr: info9,
+      state_dr: info10,
+      zip_dr: info11,
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+    });
+    
+    if (response.ok) {
+      alert('Donor has been registered successfully!');
+    } else {
+      alert('Error registering donor. Please try again.');
+    }
+
+  }
+  fetchdata();
+}
+
+// donation drive
+const data4=document.getElementById('form4');
+data4.addEventListener('submit',fetching4);
+
+ function fetching4(e){
+  e.preventDefault();
+  const info1=document.getElementById('state_dd').value;
+  const info2=document.getElementById('dob_dd').value;
+  const info3=document.getElementById('inputZip4').value;
+
+  console.log(info1,info2,info3);
+  
+  async function fetchdata(){
+    const url='http://localhost:3000/donationdrive'
+    const response= await fetch(url,{
+      method:'POST',
+      body:JSON.stringify({
+      state_dd: info1,
+      dob_dd: info2,
+      zip_dd: info3,
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+    });
+  }
+  fetchdata();
+}
+
+//donate to patient
+const data5=document.getElementById('form5');
+data5.addEventListener('submit',fetching5);
+
+ function fetching5(e){
+  e.preventDefault();
+  const info1=document.getElementById('state_dp').value;
+  const info2=document.getElementById('blood_dp').value;
+  const info3=document.getElementById('inputZip5').value;
+
+  console.log(info1,info2,info3);
+  
+  async function fetchdata(){
+    const url='http://localhost:3000/donatepatient'
+    const response= await fetch(url,{
+      method:'POST',
+      body:JSON.stringify({
+      state: info1,
+      blood: info2,
+      zip: info3,
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+    });
+  }
+  fetchdata();
+}
+
 
 
 
