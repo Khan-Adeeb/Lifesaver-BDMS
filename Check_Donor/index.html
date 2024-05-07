@@ -117,26 +117,66 @@
           <div class="text text-center bg-danger p-2">
             <h4>Check Nearby Donors</h4 >
           </div>
-            <div class="row g-5 p-4">
+            <div class="row g-5 p-3">
                 <div class="col-3">
                     <div class="select d-flex">
                         <h6>Select State</h6>
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>none</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                        <select class="form-select state" id="state" aria-label="Default select example" required>
+                          <option value="">none</option>
+                          <option value="1">Andaman & Nicobar Islands</option>
+                          <option value="2">Andhra Pradesh</option>
+                          <option value="3">Arunachal Pradesh</option>
+                          <option value="4">Assam</option>
+                          <option value="5">Bihar</option>
+                          <option value="6">Chandigarh</option>
+                          <option value="7">Chhattisgarh</option>
+                          <option value="8">Dadra and Nagar Haveli</option>
+                          <option value="9">Daman and Diu</option>
+                          <option value="10">Delhi</option>
+                          <option value="11">Goa</option>
+                          <option value="12">Gujarat</option>
+                          <option value="13">Haryana</option>
+                          <option value="14">Himachal Pradesh</option>
+                          <option value="15">Jammu and Kashmir</option>
+                          <option value="16">Jharkhand</option>
+                          <option value="17">Karnataka</option>
+                          <option value="18">Kerala</option>
+                          <option value="19">Ladakh</option>
+                          <option value="20">Lakshadweep</option>
+                          <option value="21">Madhya Pradesh</option>
+                          <option value="22">Maharashtra</option>
+                          <option value="23">Manipur</option>
+                          <option value="24">Meghalaya</option>
+                          <option value="25">Mizoram</option>
+                          <option value="26">Nagaland</option>
+                          <option value="27">Odisha</option>
+                          <option value="28">Puducherry</option>
+                          <option value="29">Punjab</option>
+                          <option value="30">Rajasthan</option>
+                          <option value="31">Sikkim</option>
+                          <option value="32">Tamil Nadu</option>
+                          <option value="33">Telangana</option>
+                          <option value="34">Tripura</option>
+                          <option value="35">Uttarakhand</option>
+                          <option value="36">Uttar Pradesh</option>
+                          <option value="37">West Bengal</option>
                         </select>
                       </div>
                 </div>
                 <div class="col-3">
                     <div class="select d-flex">
-                        <h6>Select City</h6>
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>none</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                        <h6>Blood Group</h6>
+                        <select class="form-select blood" id="bloodgroup" aria-label="Default select example" required>
+                          <option value="">none</option>
+                          <option value="1">A+</option>
+                          <option value="2">B+</option>
+                          <option value="3">AB+</option>
+                          <option value="4">A-</option>
+                          <option value="5">B-</option>
+                          <option value="6">AB-</option>
+                          <option value="7">O+</option>
+                          <option value="8">O-</option>
+          
                         </select>
                       </div>
                 </div>
@@ -147,7 +187,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <button type="button" class="btn btn-outline-dark">Submit</button>
+                    <button type="submit" id="submit" class="btn btn-outline-dark">Submit</button>
                 </div>
             </div>
               
