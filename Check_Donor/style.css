@@ -155,6 +155,11 @@ body{
 .footersec2 p {
     font-size: 3.1vw;
 }
+.img-fluid{
+    width: 50%;
+    margin-top: 6vw;
+    margin-right: 8vw;
+}
 }
 @media (min-width: 475px) and (max-width: 640px) {
     .footersec {
