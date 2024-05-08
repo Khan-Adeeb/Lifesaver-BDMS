@@ -927,47 +927,47 @@
     const data2 = document.getElementById('form2');
     data2.addEventListener('submit', fetching2);
 
-    function fetching2(e) {
-      e.preventDefault();
-      const info1 = document.getElementById('fname_rb').value;
-      const info2 = document.getElementById('lname_rb').value;
-      const info3 = document.getElementById('age_rb').value;
-      const info4 = document.getElementById('dob_rb').value;
-      const info5 = document.getElementById('email_rb').value;
-      const info6 = document.getElementById('phone_rb').value;
-      const info7 = document.getElementById('blood_rb').value;
-      const info8 = document.getElementById('state_rb').value;
-      const info9 = document.getElementById('inputZip2').value;
-
-      console.log(info1, info2, info3, info7, info8, info9);
-      async function fetchdata() {
-        const url = 'http://localhost:3000/requestblood'
-        const response = await fetch(url, {
-          method: 'POST',
-          body: JSON.stringify({
-            fname: info1,
-            lname: info2,
-            age: info3,
-            dob: info4,
-            email: info5,
-            phone: info6,
-            blood_rb: info7,
-            state_rb: info8,
-            zip_rb: info9,
-          }),
-          headers: {
-            "Content-type": "application/json; charset=UTF-8"
-          }
-        });
-        if (response.ok) {
-          alert('Patient has been registered successfully!');
-        } else {
-          alert('Error registering donor. Please try again.');
-        }
-
-      }
-      fetchdata();
+function fetching2(e) {
+  e.preventDefault();
+  const info1=document.getElementById('fname_rb').value;
+  const info2=document.getElementById('lname_rb').value;
+  const info3=document.getElementById('age_rb').value;
+  const info4=document.getElementById('dob_rb').value;
+  const info5=document.getElementById('email_rb').value;
+  const info6=document.getElementById('phone_rb').value;
+  const info7=document.getElementById('blood_rb').value;
+  const info8=document.getElementById('state_rb').value;
+  const info9=document.getElementById('inputZip2').value;
+  
+  console.log(info1,info2,info3,info7,info8,info9);
+  async function fetchdata(){
+    const url='http://localhost:3000/requestblood'
+    const response= await fetch(url,{
+      method:'POST',
+      body:JSON.stringify({
+      fname:info1,
+      lname:info2,
+      age:info3,
+      dob:info4,
+      email:info5,
+      phone:info6,  
+      blood_rb: info7,
+      state_rb: info8,
+      zip_rb: info9,
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
     }
+    });
+    if (response.ok) {
+      alert('Patient has been registered successfully!');
+    } else {
+      alert('Error registering donor. Please try again.');
+    }
+
+  }
+  fetchdata();
+}
 
     //donor register
     const data3 = document.getElementById('form3');
