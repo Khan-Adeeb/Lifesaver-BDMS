@@ -911,7 +911,6 @@
                     </div>    
                 `;
                 output.innerHTML = html;
-
       } else {
             output.innerHTML = `
                 <div class="alert alert-info" role="alert">
@@ -919,10 +918,12 @@
                 </div>
             `;
       }
-
+    }
       fetchdata();
       // window.location.href="/Check_Donor/index.html";
     }
+
+
     //request blood
     const data2 = document.getElementById('form2');
     data2.addEventListener('submit', fetching2);
