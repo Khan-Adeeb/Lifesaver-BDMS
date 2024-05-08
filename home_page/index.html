@@ -856,10 +856,7 @@
 
     data.addEventListener('submit', fetched);
     function fetched(e) {
-      // console.log("runnign");
-
       e.preventDefault();
-
       const info1 = document.getElementById("state").value;
       const info2 = document.getElementById("bloodgroup").value;
       const info3 = document.getElementById("inputZip").value;
@@ -1048,6 +1045,8 @@ function fetching2(e) {
 
     //donate to patient
     const data5 = document.getElementById('form5');
+    console.log(form5);
+
     data5.addEventListener('submit', fetching5);
 
     function fetching5(e) {
@@ -1071,6 +1070,44 @@ function fetching2(e) {
             "Content-type": "application/json; charset=UTF-8"
           }
         });
+
+        const output= document.getElementById('empty');
+        const responseData = await response.json();
+        let html = "";
+        if ( responseData.message === "success") {
+          responseData.Response.forEach(({first_name, last_name, phone, age, blood}) => {
+            html += `
+                <div class="col">
+                    <div class="card h-100" style="max-width: 800px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 ps-3 d-flex justify-content-center align-items-center">
+                                <img src="/Check_Donor/user.png" class="img-fluid cardimg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blood Group : ${blood} </h5>
+                                    <p class="card-text">Name : ${first_name} ${last_name} <br>
+                                        Number : ${phone} <br>
+                                        Age : ${age} <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+          });
+          output.innerHTML = html;
+        } else {
+          html = `
+              <div class="alert alert-info" role="alert">
+                ${responseData.Response ? responseData.Response : responseData.message}
+              </div>
+          `;
+          output.innerHTML = html;
+        }
+
+
       }
       fetchdata();
     }
