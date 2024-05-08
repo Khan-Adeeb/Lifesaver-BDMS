@@ -880,49 +880,45 @@
           }
         });
 
-        // const fetched = document.getElementById('empty');
         const output= document.getElementById('empty');
-        // const res = await response.json();
         const responseData = await response.json();
-      
-
-        // if (res.message == "success") { 
-        if (responseData.message === "success" && Array.isArray(responseData.Response) && responseData.Response.length > 0) {
-          const { first_name, last_name, phone, age, gender, blood } = responseData.Response[0];   
-            let html = `
-                    <div class="col">
-                      <div class="card h-100" style="max-width: 800px;">
+        let html = "";
+        if ( responseData.message === "success") {
+          responseData.Response.forEach(({ first_name, last_name, phone, age, gender, blood }) => {
+            html += `
+                <div class="col">
+                    <div class="card h-100" style="max-width: 800px;">
                         <div class="row g-0">
-                          <div class="col-md-4 ps-3 d-flex justify-content-center align-items-center">
-                            <img src="/Check_Donor/user.png" class="img-fluid cardimg" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Blood Group : ${blood} </h5>
-                              <p class="card-text">Name : ${first_name} ${last_name} <br>
-                                                  Number : ${phone} <br>
-                                                  Age : ${age} <br>
-                                                  Gender : ${gender}
-                              </p>
+                            <div class="col-md-4 ps-3 d-flex justify-content-center align-items-center">
+                                <img src="/Check_Donor/user.png" class="img-fluid cardimg" alt="...">
                             </div>
-                          </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blood Group : ${blood} </h5>
+                                    <p class="card-text">Name : ${first_name} ${last_name} <br>
+                                        Number : ${phone} <br>
+                                        Age : ${age} <br>
+                                        Gender : ${gender}
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>    
-                `;
-                output.innerHTML = html;
-      } else {
-            output.innerHTML = `
-                <div class="alert alert-info" role="alert">
-                    ${responseData.message} - ${responseData.Response}
+                    </div>
                 </div>
             `;
+          });
+          output.innerHTML = html;
+        } else {
+          html = `
+              <div class="alert alert-info" role="alert">
+                ${responseData.Response ? responseData.Response : responseData.message}
+              </div>
+          `;
+          output.innerHTML = html;
+        }
       }
-    }
       fetchdata();
-      // window.location.href="/Check_Donor/index.html";
     }
-
 
     //request blood
     const data2 = document.getElementById('form2');
