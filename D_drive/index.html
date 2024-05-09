@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LifeSaver-About</title>
+  <title>LifeSaver-Donation Drive</title>
   <link rel="icon" href="/home_page/images/3.png">
   <link rel="stylesheet" href="/D_drive/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -118,11 +118,11 @@
             <h4>Check Nearby Donors</h4 >
           </div>
           
-            <form method="post" class="service-form row g-5 p-3">
+            <form method="post" id="form4" class="service-form row g-5 p-3">
                 <div class="col-3">
                     <div class="select d-flex">
                         <h6>Select State</h6>
-                        <select class="form-select state" id="state" aria-label="Default select example" required>
+                        <select class="form-select state" id="state_dd" aria-label="Default select example" required>
                           <option value="">none</option>
                           <option value="1">Andaman & Nicobar Islands</option>
                           <option value="2">Andhra Pradesh</option>
@@ -164,30 +164,29 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-3">
+                  <div class="col-3">
                       <div class="select d-flex">
-                        <h6>Blood Group</h6>
-                        <select class="form-select blood" id="bloodgroup" aria-label="Default select example" required>
+                        <h6 class="heads">Category</h6>
+                        <select class="form-select category" id="category_dd" aria-label="Default select example">
                           <option value="">none</option>
-                          <option value="1">A+</option>
-                          <option value="2">B+</option>
-                          <option value="3">AB+</option>
-                          <option value="4">A-</option>
-                          <option value="5">B-</option>
-                          <option value="6">AB-</option>
-                          <option value="7">O+</option>
-                          <option value="8">O-</option>
-          
+                          <option value="1">Government</option>
+                          <option value="2">Private</option>
                         </select>
                       </div>
-                </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="col-md-15 select d-flex">
+                      <h6 id="inputs" class="heads">DOD</h6>
+                      <input type="date" id="dod_dd" class="form-control custom-form date" placeholder="dd/mm/yyyy" aria-label="Last name">
+                    </div>
+                  </div>
                 <div class="col-3">
                   <div class="col-md-2 select d-flex">
                     <h6>ZIP</h6>
-                    <input type="text" class="form-control" id="inputZip1">
+                    <input type="text" class="form-control zip" id="inputZip4">
                   </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 button">
                     <button type="submit" id="submit" class="btn btn-outline-dark">Submit</button>
                 </div>
             </form>
@@ -269,71 +268,37 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
 <script>
- const data=document.getElementsByClassName('service-form')[0];
-  data.addEventListener('submit',fetching);
+ // donation drive
+ const data4 = document.getElementById('form4');
+    data4.addEventListener('submit', fetching4);
 
- function fetching(e){
-  e.preventDefault();
-  const info1=document.getElementById('state').value;
-  const info2=document.getElementById('bloodgroup').value;
-  const info3=document.getElementById('inputZip1').value;
+    function fetching4(e) {
+      e.preventDefault();
+      const info1 = document.getElementById('state_dd').value;
+      const info2 = document.getElementById('category_dd').value;
+      const info3 = document.getElementById('dod_dd').value;
+      const info4 = document.getElementById('inputZip4').value;
 
-  console.log(info1,info2,info3);
-  
-  async function fetchdata(){
-    const url='http://localhost:3000/donor'
-    const response= await fetch(url,{
-      method:'POST',
-      body:JSON.stringify({
-      state_cd: info1,
-      blood_cd: info2,
-      zip_cd: info3,
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
+      console.log(info1, info2, info3, info4);
+
+      async function fetchdata() {
+        const url = 'http://localhost:3000/donationdrive'
+        const response = await fetch(url, {
+          method: 'POST',
+          body: JSON.stringify({
+            state_dd: info1,
+            cateogory_dd: info2,
+            dod_dd: info3,
+            zip_dd: info4,
+          }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          }
+        });
+      }
+      fetchdata();
     }
-    });
 
-    const output= document.getElementById('empty');
-        const responseData = await response.json();
-        let html = "";
-        if ( responseData.message === "success") {
-          responseData.Response.forEach(({ first_name, last_name, phone, age, gender, blood }) => {
-            html += `
-                <div class="col">
-                    <div class="card h-100" style="max-width: 800px;">
-                        <div class="row g-0">
-                            <div class="col-md-4 ps-3 d-flex justify-content-center align-items-center">
-                                <img src="/Check_Donor/user.png" class="img-fluid cardimg" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Blood Group : ${blood} </h5>
-                                    <p class="card-text">Name : ${first_name} ${last_name} <br>
-                                        Number : ${phone} <br>
-                                        Age : ${age} <br>
-                                        Gender : ${gender}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-          });
-          output.innerHTML = html;
-        } else {
-          html = `
-              <div class="alert alert-info" role="alert">
-                ${responseData.Response ? responseData.Response : responseData.message}
-              </div>
-          `;
-          output.innerHTML = html;
-        }
-
-  }
-  fetchdata();
-}
 </script>
 
 </body>
