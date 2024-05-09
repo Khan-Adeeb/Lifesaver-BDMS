@@ -194,8 +194,6 @@
       </div>
     </div> 
 
-
-
     <div class="container charts">
       <h2>Compartibilty Charts</h2> 
 
@@ -224,8 +222,6 @@
          
         </div>
     </div>
-
-
 
   </div>
 
@@ -293,7 +289,7 @@
         const output= document.getElementById('empty');
         const responseData = await response.json();
         let html = "";
-        
+
         if ( responseData.message === "success") {
           responseData.Response.forEach(({ bbname, state,category, contact, dod, address,pincode }) => {
             html += `
