@@ -97,9 +97,10 @@ body{
     }
 }
 .servicesec h2 {
+    font-weight: 800;
     text-align: center;
     color: #2a2a2a;
-    text-shadow: 0.5px 0.5px 10px #8f8f8f;
+    /* text-shadow: 0.5px 0.5px 10px #8f8f8f; */
     margin-bottom: 30px;
 }
 .nav-tabs{
@@ -150,9 +151,10 @@ body{
     color: white;
 }
 .dodont h2 {
+    font-weight: 800;
     text-align: center;
     color: #0f101a;
-    text-shadow: 0.5px 0.5px 10px #8f8f8f;
+    /* text-shadow: 0.5px 0.5px 10px #8f8f8f; */
     margin-bottom: 30px;
 }
 .doncard{
@@ -176,9 +178,10 @@ body{
     font-size: 1.3vw;
 }
 .cardsec h2{
+    font-weight: 800;
     text-align: center;
     color: #0f101a;
-    text-shadow: 0.5px 0.5px 10px #8f8f8f;
+    /* text-shadow: 0.5px 0.5px 10px #8f8f8f; */
     margin-bottom: 30px;
 }
 .contbody h5{
@@ -195,9 +198,10 @@ body{
     height: 100% !important;
 }
 .faqsec h2{
+    font-weight: 800;
     text-align: center;
     color: #0f101a;
-    text-shadow: 0.5px 0.5px 10px #8f8f8f;
+    /* text-shadow: 0.5px 0.5px 10px #8f8f8f; */
     margin-bottom: 30px;
 }
 .accordion-item{

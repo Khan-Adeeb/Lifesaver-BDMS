@@ -97,8 +97,8 @@ body{
 }
 
 #submit{
-    margin-left: 38vw;
-    margin-top: -2vw;
+    /* margin-left: 38vw; */
+    /* margin-top: -2vw; */
     text-transform: uppercase;
     font-size: 1.2vw;
     font-family: "Inter", sans-serif;
