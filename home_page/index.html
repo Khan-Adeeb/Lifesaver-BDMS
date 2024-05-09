@@ -93,7 +93,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#servicesec"> Register as Donor </a></li>
                   <li><a class="dropdown-item" href="/Check_Donor/index.html"> Donate to Patient</a></li>
-                  <li><a class="dropdown-item" href="/Check_Donor/index.html"> Donate at Donation drive </a></li>
+                  <li><a class="dropdown-item" href="/D_drive/index.html"> Donate at Donation drive </a></li>
                 </ul>
               </li>
 
@@ -506,9 +506,21 @@
                   <option value="37">West Bengal</option>
                 </select>
               </div>
-              <div class="col">
-                <h6 id="inputs" class="heads">Date of Birth</h6>
-                <input type="date" id="dob_dd" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+              <div class="row">
+                <div class="col">
+                    <div class="select">
+                      <h6 class="heads">Category</h6>
+                      <select class="form-select" id="category_dd" aria-label="Default select example">
+                        <option value="">none</option>
+                        <option value="1">Government</option>
+                        <option value="2">Private</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="col">
+                  <h6 id="inputs" class="heads">Date of Donation</h6>
+                  <input type="date" id="dod_dd" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+                </div>
               </div>
               <div class="col-md-2 select">
                 <h6 class="heads" class="heads">ZIP</h6>
@@ -1023,10 +1035,11 @@ function fetching2(e) {
     function fetching4(e) {
       e.preventDefault();
       const info1 = document.getElementById('state_dd').value;
-      const info2 = document.getElementById('dob_dd').value;
-      const info3 = document.getElementById('inputZip4').value;
+      const info2 = document.getElementById('category_dd').value;
+      const info3 = document.getElementById('dod_dd').value;
+      const info4 = document.getElementById('inputZip4').value;
 
-      console.log(info1, info2, info3);
+      console.log(info1, info2, info3, info4);
 
       async function fetchdata() {
         const url = 'http://localhost:3000/donationdrive'
@@ -1034,8 +1047,9 @@ function fetching2(e) {
           method: 'POST',
           body: JSON.stringify({
             state_dd: info1,
-            dob_dd: info2,
-            zip_dd: info3,
+            cateogory_dd: info2,
+            dod_dd: info3,
+            zip_dd: info4,
           }),
           headers: {
             "Content-type": "application/json; charset=UTF-8"
