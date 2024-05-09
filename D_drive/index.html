@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeSaver-About</title>
+  <link rel="icon" href="/home_page/images/3.png">
+  <link rel="stylesheet" href="/D_drive/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <nav class="navbar navformobile navbar-expand-lg">
+      <div class="container-fluid imglogo">
+        <img src="/home_page/images/1ab.png" alt="Logo" class="d-inline-block object-fit-cover">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/home_page/index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/About_page/index.html">ABOUT</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> DONATE </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#servicesec"> Register as Donor </a></li>
+                <li><a class="dropdown-item" href="/D_patient/index.html"> Donate to Patient</a></li>
+                <li><a class="dropdown-item" href="/D_drive/index.html"> Donate at Donation Drive </a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> REQUEST </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#servicesec"> Request for Blood </a></li>
+                <li><a class="dropdown-item" href="/Check_Donor/index.html"> Search for Donors</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/contact/index.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+
+    <nav class="navbar navforlaptop navbar-expand-lg">
+      <div class="container-fluid mainnav d-flex justify-content-between p-2 mx-md-5">
+
+        <div class="imglogo">
+          <a class="navbar-brand" href="#">
+            <img src="/home_page/images/1ab.png" alt="Logo" class="d-inline-block object-fit-cover">
+          </a>
+        </div>
+
+        <div class="textnav">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/home_page/index.html">HOME</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/About_page/index.html">ABOUT</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> WANT TO DONATE </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#servicesec"> Register as Donor </a></li>
+                  <li><a class="dropdown-item" href="/D_patient/index.html"> Donate to Patient</a></li>
+                  <li><a class="dropdown-item" href="/D_drive/index.html"> Donate at Donation Drive </a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> LOOKING FOR BLOOD </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#servicesec"> Request for Blood </a></li>
+                  <li><a class="dropdown-item" href="/Check_Donor/index.html"> Search for Donors</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/contact/index.html">CONTACT</a>
+              </li>
+
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container-fluid my-5">
+        <div class="container shadow rounded-2 bg-white">
+          <div class="text text-center bg-danger p-2">
+            <h4>Check Nearby Donors</h4 >
+          </div>
+          
+            <form method="post" class="service-form row g-5 p-3">
+                <div class="col-3">
+                    <div class="select d-flex">
+                        <h6>Select State</h6>
+                        <select class="form-select state" id="state" aria-label="Default select example" required>
+                          <option value="">none</option>
+                          <option value="1">Andaman & Nicobar Islands</option>
+                          <option value="2">Andhra Pradesh</option>
+                          <option value="3">Arunachal Pradesh</option>
+                          <option value="4">Assam</option>
+                          <option value="5">Bihar</option>
+                          <option value="6">Chandigarh</option>
+                          <option value="7">Chhattisgarh</option>
+                          <option value="8">Dadra and Nagar Haveli</option>
+                          <option value="9">Daman and Diu</option>
+                          <option value="10">Delhi</option>
+                          <option value="11">Goa</option>
+                          <option value="12">Gujarat</option>
+                          <option value="13">Haryana</option>
+                          <option value="14">Himachal Pradesh</option>
+                          <option value="15">Jammu and Kashmir</option>
+                          <option value="16">Jharkhand</option>
+                          <option value="17">Karnataka</option>
+                          <option value="18">Kerala</option>
+                          <option value="19">Ladakh</option>
+                          <option value="20">Lakshadweep</option>
+                          <option value="21">Madhya Pradesh</option>
+                          <option value="22">Maharashtra</option>
+                          <option value="23">Manipur</option>
+                          <option value="24">Meghalaya</option>
+                          <option value="25">Mizoram</option>
+                          <option value="26">Nagaland</option>
+                          <option value="27">Odisha</option>
+                          <option value="28">Puducherry</option>
+                          <option value="29">Punjab</option>
+                          <option value="30">Rajasthan</option>
+                          <option value="31">Sikkim</option>
+                          <option value="32">Tamil Nadu</option>
+                          <option value="33">Telangana</option>
+                          <option value="34">Tripura</option>
+                          <option value="35">Uttarakhand</option>
+                          <option value="36">Uttar Pradesh</option>
+                          <option value="37">West Bengal</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3">
+                      <div class="select d-flex">
+                        <h6>Blood Group</h6>
+                        <select class="form-select blood" id="bloodgroup" aria-label="Default select example" required>
+                          <option value="">none</option>
+                          <option value="1">A+</option>
+                          <option value="2">B+</option>
+                          <option value="3">AB+</option>
+                          <option value="4">A-</option>
+                          <option value="5">B-</option>
+                          <option value="6">AB-</option>
+                          <option value="7">O+</option>
+                          <option value="8">O-</option>
+          
+                        </select>
+                      </div>
+                </div>
+                <div class="col-3">
+                  <div class="col-md-2 select d-flex">
+                    <h6>ZIP</h6>
+                    <input type="text" class="form-control" id="inputZip1">
+                  </div>
+                </div>
+                <div class="col-3">
+                    <button type="submit" id="submit" class="btn btn-outline-dark">Submit</button>
+                </div>
+            </form>
+              
+        </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="empty">
+      </div>
+    </div> 
+
+
+
+    <div class="container charts">
+      <h2>Compartibilty Charts</h2> 
+
+      <div class=" row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                  <img src="/D_drive/Chart1.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                  <img src="/D_drive/chart2.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                  <img src="/D_drive/chart3.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+         
+        </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="container-fluid footersec mt-5">
+    <div class=" container footer px-5 pt-5 pb-2">
+      <img src="/home_page/images/2a.png" alt="">
+      <p>By donating blood, you become a lifeline for those in need, offering hope, healing, and a chance at life. Your generosity transforms moments of crisis into opportunities for survival, underscoring the invaluable difference every donor makes in the lives of others. Join us in this noble endeavor, where each donation is a testament to the power of compassion and humanity, making a lasting difference one drop at a time.
+      </p>
+    </div>
+    <div class="containe px-5">
+      <div class="row">
+        <div class="col ico d-flex ms-md-5 ps-md-5">
+          <i class="ri-phone-line"></i>
+          <div class="textf">
+            <h4>Phone</h4>
+            <p>+91 9985-5899</p>
+          </div>
+        </div>
+        <div class="col ico d-flex">
+          <i class="ri-mail-line"></i>
+          <div class="textf">
+            <h4>Email</h4>
+            <p>lifesaver.support@gmail.com</p>
+          </div>
+        </div>
+      </div>  
+    </div>  
+  </div>
+
+  <div class="container-fluid footersec2 d-flex justify-content-center align-items-center">
+    <p> Copyright © Iifesaver 2024. All rights reserved.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+<script>
+ const data=document.getElementsByClassName('service-form')[0];
+  data.addEventListener('submit',fetching);
+
+ function fetching(e){
+  e.preventDefault();
+  const info1=document.getElementById('state').value;
+  const info2=document.getElementById('bloodgroup').value;
+  const info3=document.getElementById('inputZip1').value;
+
+  console.log(info1,info2,info3);
+  
+  async function fetchdata(){
+    const url='http://localhost:3000/donor'
+    const response= await fetch(url,{
+      method:'POST',
+      body:JSON.stringify({
+      state_cd: info1,
+      blood_cd: info2,
+      zip_cd: info3,
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+    });
+
+    const output= document.getElementById('empty');
+        const responseData = await response.json();
+        let html = "";
+        if ( responseData.message === "success") {
+          responseData.Response.forEach(({ first_name, last_name, phone, age, gender, blood }) => {
+            html += `
+                <div class="col">
+                    <div class="card h-100" style="max-width: 800px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 ps-3 d-flex justify-content-center align-items-center">
+                                <img src="/Check_Donor/user.png" class="img-fluid cardimg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blood Group : ${blood} </h5>
+                                    <p class="card-text">Name : ${first_name} ${last_name} <br>
+                                        Number : ${phone} <br>
+                                        Age : ${age} <br>
+                                        Gender : ${gender}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+          });
+          output.innerHTML = html;
+        } else {
+          html = `
+              <div class="alert alert-info" role="alert">
+                ${responseData.Response ? responseData.Response : responseData.message}
+              </div>
+          `;
+          output.innerHTML = html;
+        }
+
+  }
+  fetchdata();
+}
+</script>
+
+</body>
+</html>

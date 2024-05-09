@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(#ffe8e8, #ffb5c8);
+}
+.navformobile{
+    display: none !important;
+}
+.navbar-brand img{
+    width: 40% ;
+    height: auto;
+}
+.nav-item a{
+    color: #0f101a;
+    font-weight: 600;
+}
+.nav-item a:hover{
+    color: #ed2e37;
+    font-weight: 600;
+}
+
+.text h4{
+    color: white;
+}
+
+.charts h2{
+    text-align: center;
+    color: black;
+    text-shadow: 0.5px 0.5px 10px #ffffff;
+    margin-bottom: 30px;
+}
+
+.cardimg{
+    border-radius: 50%;
+}
+
+
+.footersec{
+    width: 100% !important;
+    height: 49vh;
+    background-color: #b40036;
+    color: white !important;
+}
+.footer img{
+    height: auto;
+    width: 16%;
+    margin-bottom: 20px;
+}
+.footer p{
+    color: white;
+    font-weight: 500;
+}
+.textf h4{
+    font-size: 1.2vw;
+}
+.ico i{
+    font-size: 3vw;
+    margin-right: 15px;
+}
+.footersec2{
+    width: 100% !important;
+    height: 7vh;
+    background-color: #2a2a2a;
+}
+.footersec2 p{
+    color: white;
+    font-weight: 600;
+    font-size: 0.9vw;
+}
+.col-3 h6{
+    width: 12vw;
+    margin-top: 0.7vw;
+}
+.form-control {
+    width: 15vw !important;
+    margin-left: 1vw;
+    margin-top: 0.3vw;
+    letter-spacing: 1vw;
+}
+.state{
+    margin-top: 0.3vw;
+    width: 12.5vw !important;
+}
+.blood{
+    margin-top: 0.3vw;
+    width: 18vw !important;
+}
+#submit{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-family: "Inter", sans-serif;
+    height: 3vw;
+    width: 9vw;
+    border-radius: 10px;
+    border: 2px solid #ed2e37;
+    color: #ed2e37;
+    background-color: white;
+    font-weight: 700;
+    letter-spacing: 0.1vw;
+}
+#submit:hover{
+    color: white;
+    background-color: #ed2e37;
+    border: none;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 640px) {
+
+.navformobile{
+    display: inherit !important;
+    background-color: #ffffff00 !important;
+}
+.navforlaptop{
+    display: none !important;
+}
+.imglogo img{
+    width: 28vw;
+}
+.navbar-brand img {
+    width: 55%;
+    height: auto;
+}
+.mainnav{
+    flex-wrap: nowrap !important;
+}
+.marque{
+    height: 10vw;
+}
+.scrolling h1{
+    font-size: 5vw;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.faqsec h2{
+    margin: 30px 0px 20px 0px;
+}
+.footersec {
+    height: 93vh;
+}
+.footer img{
+    width: 55%;
+}
+.ico i {
+    font-size: 8vw;
+}
+.textf h4 {
+    font-size: 4.5vw;
+}
+.footersec2 p {
+    font-size: 3.1vw;
+}
+.img-fluid{
+    width: 50%;
+    margin-top: 6vw;
+    margin-right: 8vw;
+}
+}
+@media (min-width: 475px) and (max-width: 640px) {
+    .footersec {
+        height: 65vh;
+    }
+    .textf h4{
+        font-size: 3.2vw;
+    }
+    .ico i{
+        font-size: 5vw;
+        margin-right: 15px;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .navformobile{
+        display: inherit !important;
+    }
+    .navforlaptop{
+        display: none !important;
+    }
+    .imglogo img{
+        width: 20vw;
+    }
+
+}
