@@ -207,6 +207,9 @@ async function fetchdata(){
          <div class="col">
                  <div class="card h-100" style="max-width: 800px;">
                      <div class="row g-0">
+                          <div class="col-md-4 ps-3 d-flex justify-content-center align-items-center">
+                             <img src="/5979793.png" class="img-fluid cardimg" alt="...">
+                          </div>
                          <div class="col">
                              <div class="card-body">
                                  <h5 class="card-title"> ${bbname} </h5>
