@@ -118,11 +118,11 @@
             <h4>Donate to Patients</h4 >
           </div>
           
-            <form method="post" class="service-form row g-5 p-3">
+            <form method="post" id="form5" class="service-form row g-5 p-3">
                 <div class="col-3">
                     <div class="select d-flex">
                         <h6>Select State</h6>
-                        <select class="form-select state" id="state" aria-label="Default select example" required>
+                        <select class="form-select state" id="state_dp" aria-label="Default select example" required>
                           <option value="">none</option>
                           <option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
                           <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -167,7 +167,7 @@
                 <div class="col-3">
                       <div class="select d-flex">
                         <h6>Blood Group</h6>
-                        <select class="form-select blood" id="bloodgroup" aria-label="Default select example" required>
+                        <select class="form-select blood" id="blood_dp" aria-label="Default select example" required>
                           <option value="">none</option>
                           <option value="A+">A+</option>
                           <option value="B+">B+</option>
@@ -184,7 +184,7 @@
                 <div class="col-3">
                   <div class="col-md-2 select d-flex">
                     <h6>ZIP</h6>
-                    <input type="text" class="form-control" id="inputZip1">
+                    <input type="text" class="form-control" id="inputZip5">
                   </div>
                 </div>
                 <div class="col-3">
@@ -271,37 +271,36 @@
   </script>
 <script>
 
-  const data=document.getElementsByClassName('service-form')[0];
-  console.log(data);
-  data.addEventListener('submit',fetching);
+const data5=document.getElementById('form5');
+data5.addEventListener('submit', fetching5);
 
- function fetching(e){
-  e.preventDefault();
-  const info1=document.getElementById('state').value;
-  const info2=document.getElementById('bloodgroup').value;
-  const info3=document.getElementById('inputZip1').value;
+    function fetching5(e) {
+      e.preventDefault();
+      const info1 = document.getElementById('state_dp').value;
+      const info2 = document.getElementById('blood_dp').value;
+      const info3 = document.getElementById('inputZip5').value;
 
-  console.log(info1,info2,info3);
-  
-  async function fetchdata(){
-    const url='http://localhost:3000/donatepatient'
-    const response= await fetch(url,{
-      method:'POST',
-      body:JSON.stringify({
-      state: info1,
-      blood: info2,
-      zip: info3,
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-    });
+      console.log(info1, info2, info3);
 
-    const output= document.getElementById('empty');
+      async function fetchdata() {
+        const url = 'http://localhost:3000/donatepatient'
+        const response = await fetch(url, {
+          method: 'POST',
+          body: JSON.stringify({
+            state: info1,
+            blood: info2,
+            zip: info3,
+          }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          }
+        });
+
+        const output= document.getElementById('empty');
         const responseData = await response.json();
         let html = "";
         if ( responseData.message === "success") {
-          responseData.Response.forEach(({ first_name, last_name, phone, age, blood }) => {
+          responseData.Response.forEach(({first_name, last_name, phone, age, blood}) => {
             html += `
                 <div class="col">
                     <div class="card h-100" style="max-width: 800px;">
@@ -313,7 +312,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Blood Group : ${blood} </h5>
                                     <p class="card-text">Name : ${first_name} ${last_name} <br>
-                                        Number : ${phone} <br>
+                                        Contact : ${phone} <br>
                                         Age : ${age} <br>
                                     </p>
                                 </div>
@@ -333,9 +332,11 @@
           output.innerHTML = html;
         }
 
-  }
-  fetchdata();
-}
+
+      }
+      fetchdata();
+    }
+
 </script>
 
 </body>
