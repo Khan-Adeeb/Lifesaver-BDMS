@@ -230,7 +230,7 @@
               </div>
               <div class="select">
                 <h6 class="heads">Blood Group</h6>
-                <select class="form-select" id="bloodgroup" aria-label="Default select example">
+                <select class="form-select" id="bloodgroup" aria-label="Default select example" required>
                   <option value="">none</option>
                       <option value="A+">A+</option>
                           <option value="B+">B+</option>
@@ -245,7 +245,7 @@
               </div>
               <div class="col-md-2 select">
                 <h6 class="heads">ZIP</h6>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip" required>
               </div>
               <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>
             </form>
@@ -263,32 +263,32 @@
                 <div class="col">
                   <h6 id="inputs">First Name</h6>
                   <input type="text" id="fname_rb" class="form-control" placeholder="First name"
-                    aria-label="First name">
+                    aria-label="First name" required>
                 </div>
                 <div class="col">
                   <h6 id="inputs">Last Name</h6>
-                  <input type="text" id="lname_rb" class="form-control" placeholder="Last name" aria-label="Last name">
+                  <input type="text" id="lname_rb" class="form-control" placeholder="Last name" aria-label="Last name" >
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <h6 id="inputs" class="heads">Age</h6>
-                  <input type="text" id="age_rb" class="form-control" placeholder="Age" aria-label="First name">
+                  <input type="text" id="age_rb" class="form-control" placeholder="Age" aria-label="First name" required>
                 </div>
                 <div class="col">
                   <h6 id="inputs" class="heads">Date of Birth</h6>
-                  <input type="date" id="dob_rb" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name">
+                  <input type="date" id="dob_rb" class="form-control" placeholder="dd/mm/yyyy" aria-label="Last name" required>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <h6 id="inputs" class="heads">Email Address</h6>
-                  <input type="text" id="email_rb" class="form-control" placeholder="Email" aria-label="First name">
+                  <input type="text" id="email_rb" class="form-control" placeholder="Email" aria-label="First name" required>
                 </div>
                 <div class="col">
                   <h6 id="inputs" class="heads">Phone Number</h6>
                   <input type="text" id="phone_rb" class="form-control" placeholder="Phone Number"
-                    aria-label="Last name">
+                    aria-label="Last name" required>
                 </div>
               </div>
               
@@ -313,7 +313,7 @@
                 <div class="col">
                   <div class="select">
                     <h6 class="heads">Select State</h6>
-                    <select class="form-select" id="state_rb" aria-label="Default select example">
+                    <select class="form-select" id="state_rb" aria-label="Default select example" required>
                       <option value="">none</option>
                               <option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
                               <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -358,7 +358,7 @@
               </div>
               <div class="col-md-2 select">
                 <h6 class="heads">ZIP</h6>
-                <input type="text" class="form-control" id="inputZip2">
+                <input type="text" class="form-control" id="inputZip2" required>
               </div>
               <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>
             </form>
@@ -404,7 +404,7 @@
               <div class="row">
                 <div class="col">
                   <h6 id="inputs" class="heads">Email Address</h6>
-                  <input type="text" id="email_dr" class="form-control" placeholder="Email" aria-label="Email">
+                  <input type="text" id="email_dr" class="form-control" placeholder="Email" aria-label="Email" >
                 </div>                    
                   <div class="col">
                       <div class="select">
@@ -423,7 +423,7 @@
                 <div class="col">
                   <div class="select">
                     <h6 class="heads">Select State</h6>
-                    <select class="form-select" id="state_dr" aria-label="Default select example">
+                    <select class="form-select" id="state_dr" aria-label="Default select example" required>
                       <option value="">none</option>
                               <option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
                               <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -494,7 +494,7 @@
             <form id="form4" method="post" class="service-form">
               <div class="select">
                 <h6>Select State</h6>
-                <select class="form-select" id="state_dd" aria-label="Default select example">
+                <select class="form-select" id="state_dd" aria-label="Default select example" required>
                   <option value="">none</option>
                           <option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
                           <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -539,7 +539,7 @@
                 <div class="col">
                     <div class="select">
                       <h6 class="heads">Category</h6>
-                      <select class="form-select" id="category_dd" aria-label="Default select example">
+                      <select class="form-select" id="category_dd" aria-label="Default select example" required>
                         <option value="">none</option>
                         <option value="Government">Government</option>
                         <option value="Private">Private</option>
@@ -548,7 +548,7 @@
                 </div>
                 <div class="col">
                   <h6 id="inputs" class="heads">Date of Donation</h6>
-                  <input type="date" id="dod_dd" class="form-control" placeholder="dd/mm/yyyy" aria-label="Date of Donation">
+                  <input type="date" id="dod_dd" class="form-control" placeholder="dd/mm/yyyy" aria-label="Date of Donation" required>
                 </div>
               </div>
               <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>
@@ -565,7 +565,7 @@
             <form id="form5" method="post" class="service-form">
               <div class="select">
                 <h6>Select State</h6>
-                <select class="form-select" id="state_dp" aria-label="Default select example">
+                <select class="form-select" id="state_dp" aria-label="Default select example" required>
                   <option value="">none</option>
                           <option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
                           <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -608,7 +608,7 @@
               </div>
               <div class="select">
                 <h6 class="heads">Blood Group</h6>
-                <select class="form-select" id="blood_dp" aria-label="Default select example">
+                <select class="form-select" id="blood_dp" aria-label="Default select example" required>
                   <option value="">none</option>
                       <option value="A+">A+</option>
                           <option value="B+">B+</option>
@@ -622,7 +622,7 @@
               </div>
               <div class="col-md-2 select">
                 <h6 class="heads">ZIP</h6>
-                <input type="text" class="form-control" id="inputZip5">
+                <input type="text" class="form-control" id="inputZip5" required>
               </div>
               <button type="submit" class="btn btn-outline-secondary" id="submit">Submit</button>
               <div class="container mt-4">
