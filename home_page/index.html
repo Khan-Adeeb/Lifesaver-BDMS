@@ -129,10 +129,13 @@
                 part of a lifesaving network, impacting lives positively and contributing to
                 a healthier, brighter future for all.
               </p>
-              <button type="button" class="btn herobtn"><a
-                  href="whatsapp://send?text=Save a life by donating at https://adeeb.live/asim/lifesaverw/"
-                  data-action="share/whatsapp/share" target="_blank"> REFER A FRIEND </a></button>
-              <button type="button" id="herobtn2" class="btn herobtn">DONATE NOW</button>
+              <button type="button" class="btn herobtn1">
+                <a
+                  href="whatsapp://send?text=Save a life by donating blood"
+                  data-action="share/whatsapp/share" target="_blank"> REFER A FRIEND </a>
+
+                </button>
+              <button type="button" id="herobtn2" class="btn herobtn"><a href="#servicesec"> DONATE NOW </a></button>
 
             </div>
           </div>
@@ -255,7 +258,7 @@
           </div>
           <!-- form - 2 -->
           <div class="tab-pane fade" id="nav-request" role="tabpanel" aria-labelledby="nav-request-tab" tabindex="0">
-            <form id="form2" method="post" class="service-form">
+            <form id="form2" method="post" onsubmit="myFunction()" class="service-form">
               <div class="row">
                 <div class="col">
                   <h6 id="inputs">First Name</h6>
@@ -896,6 +899,8 @@
 
   <script>
 
+ 
+
     //check donor
     const data = document.getElementById("form1");
     console.log(form1);
@@ -970,47 +975,48 @@
     const data2 = document.getElementById('form2');
     data2.addEventListener('submit', fetching2);
 
-function fetching2(e) {
-  e.preventDefault();
-  const info1=document.getElementById('fname_rb').value;
-  const info2=document.getElementById('lname_rb').value;
-  const info3=document.getElementById('age_rb').value;
-  const info4=document.getElementById('dob_rb').value;
-  const info5=document.getElementById('email_rb').value;
-  const info6=document.getElementById('phone_rb').value;
-  const info7=document.getElementById('blood_rb').value;
-  const info8=document.getElementById('state_rb').value;
-  const info9=document.getElementById('inputZip2').value;
-  
-  console.log(info1,info2,info3,info7,info8,info9);
-  async function fetchdata(){
-    const url='http://localhost:3000/requestblood'
-    const response= await fetch(url,{
-      method:'POST',
-      body:JSON.stringify({
-      fname:info1,
-      lname:info2,
-      age:info3,
-      dob:info4,
-      email:info5,
-      phone:info6,  
-      blood_rb: info7,
-      state_rb: info8,
-      zip_rb: info9,
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-    });
-    if (response.ok) {
-      alert('Patient has been registered successfully!');
-    } else {
-      alert('Error registering donor. Please try again.');
-    }
+    function fetching2(e) {
+      e.preventDefault();
+      const info1=document.getElementById('fname_rb').value;
+      const info2=document.getElementById('lname_rb').value;
+      const info3=document.getElementById('age_rb').value;
+      const info4=document.getElementById('dob_rb').value;
+      const info5=document.getElementById('email_rb').value;
+      const info6=document.getElementById('phone_rb').value;
+      const info7=document.getElementById('blood_rb').value;
+      const info8=document.getElementById('state_rb').value;
+      const info9=document.getElementById('inputZip2').value;
+      
+      console.log(info1,info2,info3,info7,info8,info9);
 
-  }
-  fetchdata();
-}
+      async function fetchdata(){
+        const url='http://localhost:3000/requestblood'
+        const response= await fetch(url,{
+          method:'POST',
+          body:JSON.stringify({
+          fname:info1,
+          lname:info2,
+          age:info3,
+          dob:info4,
+          email:info5,
+          phone:info6,  
+          blood_rb: info7,
+          state_rb: info8,
+          zip_rb: info9,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+        });
+        if (response.ok) {
+          alert('Patient has been registered successfully!');
+          data.reset();
+        } else {
+          alert('Error registering donor. Please try again.');
+        }
+      }
+      fetchdata();
+    }
 
     //donor register
     const data3 = document.getElementById('form3');
@@ -1031,6 +1037,11 @@ function fetching2(e) {
       const info11 = document.getElementById('inputZip3').value;
 
       console.log(info1, info2, info3, info7, info8, info9);
+
+      if (info3 < 18 && info3 >65 ) {
+        alert("Not eligible to Donate")
+      } else {
+
       async function fetchdata() {
         const url = 'http://localhost:3000/donorregister'
         const response = await fetch(url, {
@@ -1055,10 +1066,11 @@ function fetching2(e) {
 
         if (response.ok) {
           alert('Donor has been registered successfully!');
+          data.reset();
         } else {
           alert('Error registering donor. Please try again.');
         }
-
+      }
       }
       fetchdata();
     }
@@ -1093,18 +1105,19 @@ data4.addEventListener('submit',fetching4);
         const responseData = await response.json();
         let html = "";
         if ( responseData.message === "success") {
-          responseData.Response.forEach(({ bb_name, contact, dod, address, pincode }) => {
+          responseData.Response.forEach(({ bbname, state,category, contact, dod, address,pincode  }) => {
             html += `
             <div class="col">
                     <div class="card h-100" style="max-width: 800px;">
                         <div class="row g-0">
                             <div class="col">
                                 <div class="card-body">
-                                    <h5 class="card-title">Blood Bank : ${bb_name} </h5>
-                                    <p class="card-text">Name : ${dod} <br>
-                                        Contact : ${contact} <br>
-                                        Address : ${address} <br>
-                                        Pincode : ${pincode}
+                                    <h5 class="card-title"> ${bbname} </h5>
+                                    <p class="card-text">State : ${state} <br>
+                                        Number : ${contact} <br>
+                                        Date of donation : ${dod} <br>
+                                        Category : ${category} <br>
+                                        Address : ${address} - ${pincode} 
                                     </p>
                                 </div>
                             </div>
@@ -1114,6 +1127,7 @@ data4.addEventListener('submit',fetching4);
             `;
           });
           output.innerHTML = html;
+          data.reset();
         } else {
           html = `
               <div class="alert alert-info" role="alert">
@@ -1182,6 +1196,7 @@ data4.addEventListener('submit',fetching4);
             `;
           });
           output.innerHTML = html;
+          data.reset();
         } else {
           html = `
               <div class="alert alert-info" role="alert">

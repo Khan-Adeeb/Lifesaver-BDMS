@@ -33,7 +33,7 @@ body{
     font-size: 1.3vw;
     font-weight: 600;
 }
-.herobtn a{
+.herobtn1 a{
     text-decoration: none;
     font-size: 1.1vw;
     color: white;
@@ -42,11 +42,11 @@ body{
     padding: 15px 45px;
     border-radius: 30px;
 }
-.herobtn a:hover{
+.herobtn1 a:hover{
     color: #ed2e37;
     background-color: white;
 }
-#herobtn2{
+#herobtn2 a{
     text-decoration: none;
     font-size: 1.1vw;
     color: #ed2e37;
@@ -56,7 +56,7 @@ body{
     padding: 15px 45px;
     border-radius: 30px;
 }
-#herobtn2:hover{
+#herobtn2 a:hover{
     color: white;
     background-color:#ed2e37;
 }
