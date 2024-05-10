@@ -134,6 +134,30 @@ body{
     font-size: 5vw;
 }
 
+.service-form{
+    display: inherit !important;
+}
+.col-3{
+    width: 100% !important;
+}
+.col-3 h6 {
+    width: 50% !important;
+}
+.state {
+    width: 50% !important;
+}
+.blood{
+    width: 50% !important;
+}
+#inputZip1{
+    width: 50% !important;
+}
+#submit {
+    font-size: 4.2vw;
+    height: 10vw;
+    width: 40%;
+}
+
 .accordion-button:focus {
     box-shadow: none !important;
 }
