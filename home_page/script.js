@@ -310,3 +310,21 @@ fetchdata();
    }
    fetchdata();
  }
+
+  // // Scroll-up Js
+  $(window).scroll(function () {
+    var sc = $('#arrow'),
+    scroll = $(window).scrollTop();
+    if (scroll >= 120) sc.css("display", "block");
+    else sc.css("display", "none");
+});
+$("#arrow").click(function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+$(window).scroll(function () {
+    var sticky = $('header'),
+    scroll = $(window).scrollTop();
+    if (scroll >= 120) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+});
+// Scroll-up Js
