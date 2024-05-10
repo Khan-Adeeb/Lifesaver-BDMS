@@ -37,6 +37,10 @@ body{
     box-shadow: -2px 2px 0px 0px black;
     border-radius: 8px;
 }
+#img-abt{
+    width: 600px;
+    height: 450px;
+}
 #info{
     width: 50%;
 }
@@ -236,13 +240,10 @@ body{
     display: block;
     padding: 0px;
 }
-#img-about{
-    width: 0%;
-}
-#img-about img{
-    border: 0.25vw solid black;
-    box-shadow: -2px 2px 0px 0px black;
-    border-radius: 8px;
+#img-abt{
+    width: 295px;
+    height: 300px;
+    margin: 20px 0px;
 }
 #info{
     width: 100%;
@@ -262,34 +263,53 @@ body{
 }
 
 #submit{
-    text-transform: uppercase;
     font-size: 4.5vw;
-    font-family: "Inter", sans-serif;
     height: 12vw;
     width: 32vw;
-    border-radius: 20px;
-    color: white;
-    background-color: #ed2e37;
-    border: none;
-    font-weight: 700;
-    letter-spacing: 0.1vw;
-}
-#submit:hover{
-    border: 2px solid #ed2e37;
-    color: #ed2e37;
-    background-color: white;
 }
 }
 @media (min-width: 475px) and (max-width: 640px) {
     .footersec {
-        height: 65vh;
+        height: 75vh;
     }
     .textf h4{
         font-size: 3.2vw;
     }
     .ico i{
         font-size: 5vw;
-        margin-right: 15px;
+        margin-right: 5px;
+    }
+
+
+
+    #content{
+        display: block;
+        padding: 0px;
+    }
+    #img-abt{
+        width: 450px;
+        height: 400px;
+        margin: 20px 0px;
+    }
+    #info{
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+    #info p{
+        text-transform: uppercase;
+        font-size: 1.5vw;
+        color: #b40036;
+        font-weight: 600;
+    }
+    #info h2{
+        font-size: 8vw;
+        margin-bottom: 4vw;
+    }
+    
+    #submit{
+        font-size: 3.8vw;
+        height: 9vw;
+        width: 27vw;
     }
 }
 
@@ -302,6 +322,38 @@ body{
     }
     .imglogo img{
         width: 20vw;
+    }
+    .footersec {
+        height: 48vh;
+    }
+    #content{
+        display: block;
+        padding: 0px;
+    }
+    #img-abt{
+        width: 450px;
+        height: 400px;
+        margin: 20px 0px;
+    }
+    #info{
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+    #info p{
+        text-transform: uppercase;
+        font-size: 1.5vw;
+        color: #b40036;
+        font-weight: 600;
+    }
+    #info h2{
+        font-size: 8vw;
+        margin-bottom: 4vw;
+    }
+    
+    #submit{
+        font-size: 3.8vw;
+        height: 9vw;
+        width: 27vw;
     }
 
 }
