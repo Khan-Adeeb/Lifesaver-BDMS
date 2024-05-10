@@ -270,7 +270,9 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
 <script>
- const data=document.getElementsByClassName('service-form')[0];
+
+  const data=document.getElementsByClassName('service-form')[0];
+  console.log(data);
   data.addEventListener('submit',fetching);
 
  function fetching(e){
@@ -282,13 +284,13 @@
   console.log(info1,info2,info3);
   
   async function fetchdata(){
-    const url='http://localhost:3000/donor'
+    const url='http://localhost:3000/donatepatient'
     const response= await fetch(url,{
       method:'POST',
       body:JSON.stringify({
-      state_cd: info1,
-      blood_cd: info2,
-      zip_cd: info3,
+      state: info1,
+      blood: info2,
+      zip: info3,
     }),
     headers: {
       "Content-type": "application/json; charset=UTF-8"
@@ -299,7 +301,7 @@
         const responseData = await response.json();
         let html = "";
         if ( responseData.message === "success") {
-          responseData.Response.forEach(({ first_name, last_name, phone, age, gender, blood }) => {
+          responseData.Response.forEach(({ first_name, last_name, phone, age, blood }) => {
             html += `
                 <div class="col">
                     <div class="card h-100" style="max-width: 800px;">
@@ -313,7 +315,6 @@
                                     <p class="card-text">Name : ${first_name} ${last_name} <br>
                                         Number : ${phone} <br>
                                         Age : ${age} <br>
-                                        Gender : ${gender}
                                     </p>
                                 </div>
                             </div>
