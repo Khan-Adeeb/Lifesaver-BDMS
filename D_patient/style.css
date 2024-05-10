@@ -39,7 +39,7 @@ body{
 
 .footersec{
     width: 100% !important;
-    height: 49vh;
+    height: 40vh;
     background-color: #b40036;
     color: white !important;
 }
@@ -141,7 +141,7 @@ body{
     margin: 30px 0px 20px 0px;
 }
 .footersec {
-    height: 93vh;
+    height: 72vh;
 }
 .footer img{
     width: 55%;
@@ -163,7 +163,7 @@ body{
 }
 @media (min-width: 475px) and (max-width: 640px) {
     .footersec {
-        height: 65vh;
+        height: 58vh;
     }
     .textf h4{
         font-size: 3.2vw;
