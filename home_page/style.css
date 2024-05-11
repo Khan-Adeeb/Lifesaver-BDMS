@@ -316,13 +316,14 @@ body{
 .card-body p{
     font-size: 3.3vw;
 }
-.herobtn a{
+.herobtn1 a{
     font-size: 2.9vw;
-    padding: 8px 15px;
+    padding: 5px 8px;
 }
-#herobtn2 {
+
+#herobtn2 a{
     font-size: 2.9vw;
-    padding: 8px 15px;
+    padding: 5px 8px;
 }
 #submit {
     font-size: 4.2vw;
