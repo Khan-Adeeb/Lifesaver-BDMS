@@ -27,7 +27,7 @@ function fetching(e){
       }
     });
     if(response.ok) {
-      alert('Thank you for contacting us!, we will get back to you shortly.');
+      alert('Thank you for contacting us!');
     data.reset();
     } else {
       alert('Error. Please try again.');

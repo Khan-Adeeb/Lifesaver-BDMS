@@ -82,35 +82,9 @@ body{
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
 }
-
-.faqsec h2{
-    text-align: center;
-    color: white;
-    text-shadow: 0.5px 0.5px 10px #8f8f8f;
-    margin-bottom: 30px;
-}
-.accordion-item{
-    background-color: transparent !important;
-    border: none !important;
-    color: white !important;
-}
-.accordion-button {
-    background-color: #2a2a2a !important;
-    color: white !important;
-    font-weight: 700;
-}
-.accordion-button[aria-expanded="true"] {
-    background-color: #ed2e37 !important;
-    color: white !important;
-}
-.accordion-button::after {
-    background-color: rgba(255, 255, 255, 0.516) !important;;
-    border-radius: 50%;
-    padding: 2px !important;
-}
 .footersec{
     width: 100% !important;
-    height: 49vh;
+    height: 42vh;
     background-color: #b40036;
     color: white !important;
 }
