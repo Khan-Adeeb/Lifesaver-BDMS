@@ -298,7 +298,7 @@ body{
     display: none !important;
 }
 .imglogo img{
-    width: 28vw;
+    width: 30vw;
 }
 .navbar-brand img {
     width: 55%;
@@ -314,7 +314,7 @@ body{
     display: none;
 }
 .card-body p{
-    font-size: 3.3vw;
+    font-size: 3.8vw;
 }
 .herobtn1 a{
     font-size: 2.9vw;
@@ -344,11 +344,13 @@ body{
     color: #0f101a;
 }
 .sersec{
+    display: inherit !important;
     flex-wrap: nowrap !important;
 }
 .nav-tabs button {
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 3vw;
+    width: 100%;
 }
 .dodont h2{
     margin: 30px 0px 20px 0px;
@@ -361,13 +363,13 @@ body{
     font-size: 5vw;
 }
 .docard1 li{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .doncard1 h5{
     font-size: 5vw;
 }
 .doncard1 li{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .contbody h5{
     font-size: 4.5vw;
@@ -379,7 +381,7 @@ body{
     margin: 30px 0px 20px 0px;
 }
 .footersec {
-    height: 72vh;
+    height: 66vh;
 }
 .footer img{
     width: 55%;

@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 90px;
+    /* padding: 80px 90px; */
 }
 #img-about{
     width: 50%;
@@ -83,21 +83,6 @@ body{
     background-color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navformobile{
     display: none !important;
 }
@@ -120,31 +105,15 @@ body{
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
 }
+#textarea{
+    width: 100%;
+}
 
 .faqsec h2{
     text-align: center;
     color: white;
     text-shadow: 0.5px 0.5px 10px #8f8f8f;
     margin-bottom: 30px;
-}
-.accordion-item{
-    background-color: transparent !important;
-    border: none !important;
-    color: white !important;
-}
-.accordion-button {
-    background-color: #2a2a2a !important;
-    color: white !important;
-    font-weight: 700;
-}
-.accordion-button[aria-expanded="true"] {
-    background-color: #ed2e37 !important;
-    color: white !important;
-}
-.accordion-button::after {
-    background-color: rgba(255, 255, 255, 0.516) !important;;
-    border-radius: 50%;
-    padding: 2px !important;
 }
 .footersec{
     width: 100% !important;
@@ -211,7 +180,7 @@ body{
     margin: 30px 0px 20px 0px;
 }
 .footersec {
-    height: 105vh;
+    height: 66vh;
 }
 .footer img{
     width: 55%;
@@ -240,9 +209,15 @@ body{
     display: block;
     padding: 0px;
 }
+#textarea{
+    width: 100%;
+}
+#img-about{
+    width: 100%;
+}
 #img-abt{
-    width: 295px;
-    height: 300px;
+    width: 100%;
+    height: 30vh;
     margin: 20px 0px;
 }
 #info{
@@ -261,7 +236,6 @@ body{
     color: black;
     font-weight: 700;
 }
-
 #submit{
     font-size: 4.5vw;
     height: 12vw;
@@ -281,36 +255,6 @@ body{
     }
 
 
-
-    #content{
-        display: block;
-        padding: 0px;
-    }
-    #img-abt{
-        width: 450px;
-        height: 400px;
-        margin: 20px 0px;
-    }
-    #info{
-        width: 100%;
-        margin-bottom: 4vw;
-    }
-    #info p{
-        text-transform: uppercase;
-        font-size: 1.5vw;
-        color: #b40036;
-        font-weight: 600;
-    }
-    #info h2{
-        font-size: 8vw;
-        margin-bottom: 4vw;
-    }
-    
-    #submit{
-        font-size: 3.8vw;
-        height: 9vw;
-        width: 27vw;
-    }
 }
 
 @media (min-width: 475px) and (max-width: 991px) {
@@ -330,8 +274,11 @@ body{
         display: block;
         padding: 0px;
     }
+    #img-about{
+        width: 100%;
+    }
     #img-abt{
-        width: 450px;
+        width: 100%;
         height: 400px;
         margin: 20px 0px;
     }
