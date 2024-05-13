@@ -68,18 +68,11 @@ body{
     width: 12vw;
     margin-top: 0.7vw;
 }
-.zip {
-    width: 15vw !important;
-    margin-left: 1vw;
-    margin-top: 0.3vw;
-    letter-spacing: 1vw;
-}
 .heads{
     margin-top: 0.7vw;
 }
 .date{
     margin-top: 0.3vw;
-    /* margin-left: 1vw; */
     width: 40vw !important;
 }
 .state{
@@ -92,8 +85,6 @@ body{
 }
 
 #submit{
-    /* margin-left: 38vw; */
-    /* margin-top: -2vw; */
     text-transform: uppercase;
     font-size: 1.2vw;
     font-family: "Inter", sans-serif;
@@ -152,16 +143,16 @@ body{
 .state {
     width: 50% !important;
 }
-.blood{
+.category{
     width: 50% !important;
 }
-#inputZip1{
+#dod_dd{
     width: 50% !important;
 }
 #submit {
     font-size: 4.2vw;
     height: 10vw;
-    width: 40%;
+    width: 100%;
 }
 
 .accordion-button:focus {
@@ -171,7 +162,7 @@ body{
     margin: 30px 0px 20px 0px;
 }
 .footersec {
-    height: 72vh;
+    height: 66vh;
 }
 .footer img{
     width: 55%;
