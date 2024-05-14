@@ -135,9 +135,9 @@
 
    console.log(info1, info2, info3, info7, info8, info9);
 
-   if (info3 < 18 && info3 >65 ) {
-     alert("Not eligible to Donate")
-   } else {
+  //  if (info3 < 18 && info3 >65 ) {
+  //    alert("Not eligible to Donate")
+  //  } else {
 
    async function fetchdata() {
      const url = 'http://localhost:3000/donorregister'
@@ -167,7 +167,7 @@
      } else {
        alert('Error registering donor. Please try again.');
      }
-   }
+   
    }
    fetchdata();
  }
