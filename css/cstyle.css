@@ -7,7 +7,7 @@ body{
     
 }
 #about{
-    background-image: url(/About_page/photo-1606206522398-de3bd05b1615.avif);
+    background-image: url(../images/about/bachground.avif);
     width: 100%;
     height: 360px;
 }

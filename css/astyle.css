@@ -7,7 +7,7 @@ body{
     
 }
 #about{
-    background-image: url(./photo-1606206522398-de3bd05b1615.avif);
+    background-image: url(../images/about/bachground.avif);
     width: 100%;
     height: 360px;
 }
@@ -27,7 +27,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 80px 90px; */
 }
 #img-about{
     width: 50%;
